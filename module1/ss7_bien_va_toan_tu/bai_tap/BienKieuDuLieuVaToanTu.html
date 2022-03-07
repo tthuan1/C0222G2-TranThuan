@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+
+<div>
+    <label>Nhập điểm môn vật lý </label><input type="number" id="physics"><br>
+
+    <label>Nhập điểm môn hoá học </label><input type="number" id="chemistry"><br>
+
+    <label>Nhập điểm môn sinh học </label><input type="number" id="biological"><br>
+
+    <button onclick="count()">
+        Xác nhận
+    </button>
+    <div>
+        Tổng điểm của bạn là: <span id="total"></span>
+    </div>
+    <div>
+        Tổng điểm trung bình của bạn là: <span id="medium"></span>
+    </div>
+</div>
+<br>
+<div>
+    <input type="number" id="celsius" placeholder="Nhập độ C">
+    <label>(Celsius)</label>
+    <span id="fahrenheit"></span> <br>
+    <button onclick="temperature()">
+        Chuyển đổi độ C sang F
+    </button>
+</div>
+<br>
+<div>
+
+
+    <input type="number" id="diameter" placeholder="Nhập đường kính"> cm
+    <br>
+    <button onclick="circle()">
+        Tính diện tích và chu vi hình tròn
+    </button>
+    <br>
+    Diện tích hình tròn là: <span id="acreage"></span><br>
+    <br>
+    Chu vi hình tròn là: <span id="perimeter"></span>
+</div>
+<p></p>
+
+
+<script>
+    function count() {
+        let physics = parseInt(document.getElementById("physics").value);
+        let chemistry = parseInt(document.getElementById("chemistry").value);
+        let biological = parseInt(document.getElementById("biological").value);
+        let total = physics + chemistry + biological;
+        let medium = (physics + chemistry + biological) / 3;
+
+        document.getElementById("total").innerHTML = +total;
+        document.getElementById("medium").innerHTML = +medium;
+
+    }
+
+    function temperature() {
+        let celsius = parseFloat(document.getElementById("celsius").value)
+        let fahrenheit = (celsius / 5) * 9 + 32;
+        document.getElementById("fahrenheit").innerHTML ="= " +fahrenheit +" Fahrenheit";
+    }
+
+    function circle() {
+        let diameter = parseInt(document.getElementById("diameter").value)
+
+        // let result = radius*radius*3.14;
+
+        let acreage = diameter / 2 * diameter / 2 * 3.14;
+        let perimeter = diameter * 3.14;
+
+        document.getElementById("acreage").innerHTML = +acreage + ' cm²' ;
+        document.getElementById("perimeter").innerHTML = +perimeter +' cm';
+
+    }
+</script>
+</body>
+</html>

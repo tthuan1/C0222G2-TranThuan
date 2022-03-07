@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ứng dụng chuyển đổi tiền tệ</title>
+    <style>
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <th>
+            <input type="number" id="amount" placeholder="Nhập số tiền">
+        </th>
+        <th>
+            <select style="width: 50%">
+                <option>Việt nam</option>
+                <option>Khựa</option>
+                <option>Nga</option>
+                <option>Mỹ</option>
+            </select>
+        </th>
+        <th>
+            <select>
+                <option>USD</option>
+                <option>Laos</option>
+                <option>Khựa</option>
+            </select>
+        </th>
+        <th>
+            <button onclick="convert()" style="width: auto">Convert</button>
+        </th>
+    </tr>
+
+
+</table>
+Result: <span id="result"></span>
+
+
+
+<script>
+    function convert() {
+        let amount = parseInt(document.getElementById("amount").value)
+        let result = amount * 0.000044;
+        // let Currency= parseInt(document.getElementById("").value)
+        // if ()
+        document.getElementById("result").innerHTML=result + "USD";
+        
+    }
+</script>
+</body>
+</html>
