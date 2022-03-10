@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+    <input type="number" id="height"  placeholder="Nhập chiều cao:">
+    <input type="number" id="weight"  placeholder="Nhập cân nặng:">
+    <button onclick="people()">ok</button>
+
+    <span id="result"></span>
+
+<script>
+    function people(){
+        let weight = parseFloat(document.getElementById("weight").value);
+        let height = parseFloat(document.getElementById("height").value);
+        let bmi = weight/(height*height);
+        console.log(bmi)
+        if (bmi < 18){
+            document.getElementById("result").innerHTML= "Thiếu cân";
+        }
+        else if (bmi < 25.0){
+            document.getElementById("result").innerHTML= "Bình thường";
+        }
+        else if (bmi < 30.0){
+            document.getElementById("result").innerHTML= "Thừa cân";
+        }
+        else{
+            document.getElementById("result").innerHTML= "Béo phì";
+        }
+
+    }
+</script>
+</body>
+</html>

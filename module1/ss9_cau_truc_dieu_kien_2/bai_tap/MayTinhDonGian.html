@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+
+<style>
+    table{
+        border: 2px solid black;
+        width: 50%;
+        color: blue;
+    }
+    th{
+
+        width: 25%;
+    }
+    button{
+        width: 100%;
+        background-color: yellow;
+    }
+</style>
+
+<body>
+<table>
+    <tr>
+        <td colspan="4">
+            <input type="text" style="width: 98%" id="shows" value="">
+        </td>
+    </tr>
+    <tr>
+        <th><button onclick="ipput(1)">1</button></th>
+        <th><button onclick="ipput(2)">2</button></th>
+        <th><button onclick="ipput(3)">3</button></th>
+        <th><button onclick="input('+')">+</button></th>
+
+    </tr>
+    <tr>
+        <th><button onclick="ipput(4)">4</button></th>
+        <th><button onclick="ipput(5)">5</button></th>
+        <th><button onclick="ipput(6)">6</button></th>
+        <th><button onclick="calculate('-')">-</button></th>
+    </tr>
+    <tr><th><button onclick="ipput(7)">7</button></th>
+        <th><button onclick="ipput(8)">8</button></th>
+        <th><button onclick="ipput(9)">9</button></th>
+        <th><button onclick="calculate('*')">x</button></th>
+    </tr>
+    <tr><th><button onclick="calculate('C')">C</button></th>
+        <th><button onclick="ipput(0)">0</button></th>
+        <th><button onclick="bang('=')">=</button></th>
+        <th><button onclick="calculate('/')">/</button></th>
+    </tr>
+</table>
+
+<script>
+    function ipput(num) {
+        document.getElementById("shows").value +=num;
+    }
+    function bang(){
+        let string = document.getElementById("shows").value;
+        let resut = aval(string);
+        document.getElementById("shows").value = resut;
+    }
+</script>
+</body>
+</html>
