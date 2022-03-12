@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập vòng lặp 01</title>
+</head>
+
+<body>
+<div>
+    Bài 1
+    <button onclick="bai1()">Đếm từ 1 --> 100</button>
+    <br>
+    <span id="bai1"></span>
+    <br>
+</div>
+<div>
+    Bài 2
+    <input type="number" id="nhietDo" placeholder="Nhập nhiệt độ">
+    <button onclick="bai2()">xác nhận</button>
+    <br>
+    <span id="ketQua2"></span>
+    <br>
+</div>
+<div>
+    Bài 3
+    <!--    <input type="number" id="2" placeholder="Nhập nhiệt độ">-->
+    <button onclick="bai3()">20 số trong dãy fibonacci đầu tiên</button>
+    <br>
+    <span id="ketQua3"></span>
+    <br>
+</div>
+<div>
+    Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+    <!--    <input type="number" id="2" placeholder="Nhập nhiệt độ">-->
+    <button onclick="bai4()">xác nhận</button>
+    <br>
+    <span id="ketQua4"></span>
+    <br>
+</div>
+<div>
+    Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci.
+    <!--    <input type="number" id="2" placeholder="Nhập nhiệt độ">-->
+    <button onclick="bai5()">xác nhận</button>
+    <br>
+    <span id="ketQua5"></span>
+    <br>
+</div>
+<div>
+    Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+    <button onclick="bai6()">xác nhận</button>
+    <br>
+    <span id="ketQua6"></span>
+    <br>
+</div>
+<div>
+    Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100.
+    Nhưng nếu số chia hết cho 3 thì in ra "Fizz",
+    5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5
+    thì in ra chữ "FizzBuzz".
+    <!--    <input type="number" id="2" placeholder="Nhập nhiệt độ">-->
+    <button onclick="bai7()">xác nhận</button>
+    <br>
+    <span></span>
+    <br>
+</div>
+
+<script>
+    function bai1() {
+        let i;
+        for (i = 1; i < 100; i++) {
+            console.log(i)
+        }
+        document.getElementById("bai1").innerHTML = "Đã hoàn thành đếm đến số " + (--i);
+    }
+    function bai2() {
+        let nhietDo = parseFloat(document.getElementById("nhietDo").value);
+        if (nhietDo < 20) {
+            document.getElementById("ketQua2").innerHTML = "Hãy tăng nhiệt độ !";
+        } else if (nhietDo > 100) {
+            document.getElementById("ketQua2").innerHTML = "Hãy giảm nhiệt độ !";
+        } else {
+            document.getElementById("ketQua2").innerHTML = "Nhiệt độ tốt";
+        }
+    }
+    function bai3() {
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        let ketQua = '';
+        for (let i = 2; i < 20; i++) {
+            c = a + b;
+            console.log(c);
+            ketQua += ", " + c;
+            a = b;
+            b = c;
+        }
+        document.getElementById("ketQua3").innerText = "20 số trong dãy fibonacci đầu tiên là: 0,1" + ketQua;
+    }
+    function bai4() {
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        let ketQua = '';
+        for (let i = 0; i < 18; i++) {
+            c = a + b;
+            ketQua = c;
+            a = b;
+            b = c;
+            if (ketQua %5 ===0){
+                console.log(ketQua)
+                break;
+            }else {
+            }
+        }
+        document.getElementById("ketQua4").innerText=ketQua;
+    }
+    function bai5() {
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        let ketQua = '';
+        for (let i = 0; i < 18; i++) {
+            c = a + b;
+            ketQua += c;
+            a = b;
+            b = c;
+            ketQua=+ketQua;
+        }
+        document.getElementById("ketQua5").innerText=ketQua+1;
+    }
+    function bai6() {
+        let ketQua = 0; //biến tổng kết quả
+        let N = 0; //biến đếm N
+        let i;
+        // while (N < 30) {
+        //
+        // }
+        if (N<31){
+            for (i = 0;i<=210; i++) {
+                if (i % 7 === 0) {
+                    N++;// biến đếm cộng 1
+                    ketQua = ketQua+ i;
+                    // console.log(ketQua)
+                    console.log(ketQua)
+                }
+            }
+        }
+
+        document.getElementById("ketQua6").innerHTML=ketQua;
+    }
+        // for (let i=1;i<1000;i++){
+        //     if (i % 7 ===0){
+        //         N++;
+        //         ketQua += i;
+        //     }
+        //     if (N>9){break;}
+        // }
+        // console.log(ketQua)
+
+
+
+
+</script>
+</body>
+</html>

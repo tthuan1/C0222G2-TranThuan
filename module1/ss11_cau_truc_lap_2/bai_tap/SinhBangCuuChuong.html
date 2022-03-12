@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <title>Sinh bảng cửu chương</title>
 </head>
+<style>
+    table{
+        margin: auto;
+        width: 100%;
+    }
+    table, th, td{
+        border: 1px solid;
+
+    }
+    td{
+
+    }
+</style>
 <body>
 <script>
-
+    let tableCell;
+    tableCell="<table>";
+    for (let i = 1; i <=9 ; i++) {
+        tableCell = tableCell + "<tr>";
+        for (let j = 2; j <= 9; j++) {
+            tableCell = tableCell + "<td>" +j + "x"+ i+ "=" + i*j +"</td>";
+        }
+    }
+    tableCell = tableCell + "</table>";
+    document.write(tableCell);
 </script>
 </body>
 </html>
