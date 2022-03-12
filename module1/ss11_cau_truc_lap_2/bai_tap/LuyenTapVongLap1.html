@@ -57,12 +57,23 @@
     Nhưng nếu số chia hết cho 3 thì in ra "Fizz",
     5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5
     thì in ra chữ "FizzBuzz".
+<<<<<<< HEAD
     <!--    <input type="number" id="2" placeholder="Nhập nhiệt độ">-->
     <button onclick="bai7()">xác nhận</button>
     <br>
     <span></span>
     <br>
 </div>
+=======
+    <button onclick="bai7()">xác nhận</button>
+    <br>
+    <span id="ketQua7"></span>
+    <br>
+</div>
+<div>
+    Bài 8: Game đoán số
+</div>
+>>>>>>> a3f6d6d (nopbai)
 
 <script>
     function bai1() {
@@ -129,6 +140,7 @@
         document.getElementById("ketQua5").innerText=ketQua+1;
     }
     function bai6() {
+<<<<<<< HEAD
         let ketQua = 0; //biến tổng kết quả
         let N = 0; //biến đếm N
         let i;
@@ -158,6 +170,41 @@
         // console.log(ketQua)
 
 
+=======
+        let ketQua = 0;
+        let N = 0; //biến đếm N
+        let i=1;
+        while (N<30){
+            if (i%7===0){
+                N++
+                ketQua+=i;
+            }i++
+        console.log(ketQua)
+        }
+        document.getElementById("ketQua6").innerHTML=ketQua;
+    }
+    function bai7(){
+        let j;
+        for (let i=1;i<=100;i++){
+            if (i%3===0){
+                j ="Fizz"
+                document.write(j + "<br>")
+            }
+            if (i%5===0){
+                j = "Buzz";
+                document.write(j + "<br>")
+            }
+            if ((i%3===0) && (i%5===0)){
+                j = "FizzBuzz";
+                document.write(j + "<br>")
+            }
+            if ((i%3!==0) && (i%5!==0)){
+                j=i;
+                document.write(j + "<br>")
+            }
+        }
+    }
+>>>>>>> a3f6d6d (nopbai)
 
 
 </script>
