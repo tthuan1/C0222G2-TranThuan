@@ -14,7 +14,7 @@
 </div>
 <div>
     Bài 2: Tính giai thừa của một số nguyên dương
-    <input type="text" id="num" placeholder="Nhập số nguyên dương">
+    <label for="num"></label><input type="text" id="num" placeholder="Nhập số nguyên dương">
     <button onclick="bai2()">Kết quả</button><br>
     <span id="ketQua2"></span><br>
 </div>
@@ -25,15 +25,15 @@
 </div>
 <div>
     Bài 4: In hình chữ nhật rổng ruột
-    <input type="number" id="a" placeholder="Nhập chiều cao" >
-    <input type="number" id="b" placeholder="Nhập chiều dài" >
+    <label for="a"></label><input type="number" id="a" placeholder="Nhập chiều cao" >
+    <label for="b"></label><input type="number" id="b" placeholder="Nhập chiều dài" >
     <button onclick="bai4()">In hình chữ nhật rổng ruột</button><br>
 
 </div>
 <div>
     Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
-    <input type="number" id="tien" placeholder="nhập số tiền nợ">
-    <input type="number" id="thang" placeholder="số tháng đã nợ">
+    <label for="tien"></label><input type="number" id="tien" placeholder="nhập số tiền nợ">
+    <label for="thang"></label><input type="number" id="thang" placeholder="số tháng đã nợ">
     <button onclick="bai5()">Số tiền đang nợ</button><br>
     <span id="ketQua5"></span><br>
 </div>
@@ -62,9 +62,9 @@
             for (num; num > 0;num--){
                 ketQua *= num
             }
-            document.getElementById("ketQua2").innerText=ketQua;
+            document.getElementById("ketQua2").innerHTML=ketQua;
         }else {
-            document.getElementById("ketQua2").innerText="Số bạn nhập không phải là số nguyên dương";
+            document.getElementById("ketQua2").innerHTML="Số bạn nhập không phải là số nguyên dương";
         }
     }
     function bai3(){
@@ -123,8 +123,8 @@
         }
     }
     function bai5() {
-        let a=parseFloat(document.getElementById("tien").value);//số nợ đầu
-        let b=parseFloat(document.getElementById("thang").value);//số tháng đã nợ
+        let a=parseInt(document.getElementById("tien").value);//số nợ đầu
+        let b=parseInt(document.getElementById("thang").value);//số tháng đã nợ
         let c=0; //số tiền lãi
         for (let i = 0; i < b; i++) {
             c=(a*10)/100;
