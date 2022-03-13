@@ -15,7 +15,8 @@
 <div>
     Bài 2: Tính giai thừa của một số nguyên dương
     <label for="num"></label><input type="text" id="num" placeholder="Nhập số nguyên dương">
-    <button onclick="bai2()">Kết quả</button><br>
+    <button onclick="bai2()">Kết quả</button>
+    <br>
     <span id="ketQua2"></span><br>
 </div>
 <div>
@@ -25,23 +26,26 @@
 </div>
 <div>
     Bài 4: In hình chữ nhật rổng ruột
-    <label for="a"></label><input type="number" id="a" placeholder="Nhập chiều cao" >
-    <label for="b"></label><input type="number" id="b" placeholder="Nhập chiều dài" >
-    <button onclick="bai4()">In hình chữ nhật rổng ruột</button><br>
+    <label for="a"></label><input type="number" id="a" placeholder="Nhập chiều cao">
+    <label for="b"></label><input type="number" id="b" placeholder="Nhập chiều dài">
+    <button onclick="bai4()">In hình chữ nhật rổng ruột</button>
+    <br>
 
 </div>
 <div>
-    Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con)  khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+    Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi
+    xuất hàng tháng.
     <label for="tien"></label><input type="number" id="tien" placeholder="nhập số tiền nợ">
     <label for="thang"></label><input type="number" id="thang" placeholder="số tháng đã nợ">
-    <button onclick="bai5()">Số tiền đang nợ</button><br>
+    <button onclick="bai5()">Số tiền đang nợ</button>
+    <br>
     <span id="ketQua5"></span><br>
 </div>
 <div>
     Bài 6: In hình trái tim
 </div>
 <script>
-    function bai1(){
+    function bai1() {
         let a = 0;
         let b = 1;
         let c = a + b;
@@ -55,22 +59,24 @@
         }
         document.getElementById("ketQua1").innerText = "20 số trong dãy fibonacci đầu tiên là: 0,1" + ketQua;
     }
+
     function bai2() {
-        let num=parseFloat(document.getElementById("num").value);
-        let ketQua=1;
-        if (num > 0 && num %1===0){
-            for (num; num > 0;num--){
+        let num = parseFloat(document.getElementById("num").value);
+        let ketQua = 1;
+        if (num > 0 && num % 1 === 0) {
+            for (num; num > 0; num--) {
                 ketQua *= num
             }
-            document.getElementById("ketQua2").innerHTML=ketQua;
-        }else {
-            document.getElementById("ketQua2").innerHTML="Số bạn nhập không phải là số nguyên dương";
+            document.getElementById("ketQua2").innerHTML = ketQua;
+        } else {
+            document.getElementById("ketQua2").innerHTML = "Số bạn nhập không phải là số nguyên dương";
         }
     }
-    function bai3(){
-        let n=5;
+
+    function bai3() {
+        let n = 5;
         //hình thứ 1
-        for (let i = 0; i < n; i++){
+        for (let i = 0; i < n; i++) {
             for (let j = 0; j <= i; j++) {
                 document.write("*")
             }
@@ -85,12 +91,12 @@
             }
         }
         //hình thứ 3
-        for (let i = 1; i <=n ; i++) {
+        for (let i = 1; i <= n; i++) {
             document.write('<br>');
-            for (let j = 1; j <= n ; j++) {
-                if (j <= (n - i )){
+            for (let j = 1; j <= n; j++) {
+                if (j <= (n - i)) {
                     document.write('&nbsp&nbsp');
-                }else {
+                } else {
                     document.write('*');
                 }
             }
@@ -99,39 +105,41 @@
         for (let i = 1; i <= n; i++) {
             document.write('<br>');
             for (let j = 1; j <= n; j++) {
-                if (j < i){
+                if (j < i) {
                     document.write('&nbsp&nbsp');
-                }else {
+                } else {
                     document.write('*');
                 }
             }
         }
     }
+
     function bai4() {
         //&nbsp&nbsp
-        let a=parseInt(document.getElementById("a").value)
-        let b=parseInt(document.getElementById("b").value)
-        for (let i =0;i<a;i++){
+        let a = parseInt(document.getElementById("a").value)
+        let b = parseInt(document.getElementById("b").value)
+        for (let i = 0; i < a; i++) {
             document.write("<br>")
-            for (let j=0;j<b;j++){
-                if (j > 0 && j < (b-1) && i > 0 && i < (a-1)){
+            for (let j = 0; j < b; j++) {
+                if (j > 0 && j < (b - 1) && i > 0 && i < (a - 1)) {
                     document.write("&nbsp&nbsp")
-                }else {
+                } else {
                     document.write("*")
                 }
             }
         }
     }
+
     function bai5() {
-        let a=parseInt(document.getElementById("tien").value);//số nợ đầu
-        let b=parseInt(document.getElementById("thang").value);//số tháng đã nợ
-        let c=0; //số tiền lãi
+        let a = parseInt(document.getElementById("tien").value);//số nợ đầu
+        let b = parseInt(document.getElementById("thang").value);//số tháng đã nợ
+        let c = 0; //số tiền lãi
         for (let i = 0; i < b; i++) {
-            c=(a*10)/100;
-            a=a+c;
+            c = (a * 10) / 100;
+            a = a + c;
             console.log(a)
         }
-         document.getElementById("ketQua5").innerHTML=a;
+        document.getElementById("ketQua5").innerHTML = a;
 
     }
 

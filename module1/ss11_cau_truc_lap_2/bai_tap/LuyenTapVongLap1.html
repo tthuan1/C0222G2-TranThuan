@@ -15,7 +15,7 @@
 </div>
 <div>
     Bài 2
-    <input type="number" id="nhietDo" placeholder="Nhập nhiệt độ">
+    <label for="nhietDo"></label><input type="number" id="nhietDo" placeholder="Nhập nhiệt độ">
     <button onclick="bai2()">xác nhận</button>
     <br>
     <span id="ketQua2"></span>
@@ -57,23 +57,12 @@
     Nhưng nếu số chia hết cho 3 thì in ra "Fizz",
     5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5
     thì in ra chữ "FizzBuzz".
-<<<<<<< HEAD
     <!--    <input type="number" id="2" placeholder="Nhập nhiệt độ">-->
     <button onclick="bai7()">xác nhận</button>
     <br>
     <span></span>
     <br>
 </div>
-=======
-    <button onclick="bai7()">xác nhận</button>
-    <br>
-    <span id="ketQua7"></span>
-    <br>
-</div>
-<div>
-    Bài 8: Game đoán số
-</div>
-
 
 <script>
     function bai1() {
@@ -83,6 +72,7 @@
         }
         document.getElementById("bai1").innerHTML = "Đã hoàn thành đếm đến số " + (--i);
     }
+
     function bai2() {
         let nhietDo = parseFloat(document.getElementById("nhietDo").value);
         if (nhietDo < 20) {
@@ -93,6 +83,7 @@
             document.getElementById("ketQua2").innerHTML = "Nhiệt độ tốt";
         }
     }
+
     function bai3() {
         let a = 0;
         let b = 1;
@@ -107,6 +98,7 @@
         }
         document.getElementById("ketQua3").innerText = "20 số trong dãy fibonacci đầu tiên là: 0,1" + ketQua;
     }
+
     function bai4() {
         let a = 0;
         let b = 1;
@@ -117,14 +109,15 @@
             ketQua = c;
             a = b;
             b = c;
-            if (ketQua %5 ===0){
+            if (ketQua % 5 === 0) {
                 console.log(ketQua)
                 break;
-            }else {
+            } else {
             }
         }
-        document.getElementById("ketQua4").innerText=ketQua;
+        document.getElementById("ketQua4").innerText = ketQua;
     }
+
     function bai5() {
         let a = 0;
         let b = 1;
@@ -135,78 +128,51 @@
             ketQua += c;
             a = b;
             b = c;
-            ketQua=+ketQua;
+            ketQua = +ketQua;
         }
-        document.getElementById("ketQua5").innerText=ketQua+1;
+        document.getElementById("ketQua5").innerText = ketQua + 1;
     }
+
     function bai6() {
-<<<<<<< HEAD
         let ketQua = 0; //biến tổng kết quả
-        let N = 0; //biến đếm N
-        let i;
-        // while (N < 30) {
-        //
-        // }
-        if (N<31){
-            for (i = 0;i<=210; i++) {
-                if (i % 7 === 0) {
-                    N++;// biến đếm cộng 1
-                    ketQua = ketQua+ i;
-                    // console.log(ketQua)
-                    console.log(ketQua)
-                }
+        let n = 0; //biến đếm N
+        let i = 0;
+        while (n < 30) {
+            i++;
+            if (i % 7 === 0) {
+                n++;// biến đếm cộng 1
+                ketQua += i;
+                // console.log(ketQua)
+                console.log(ketQua)
             }
         }
-
-        document.getElementById("ketQua6").innerHTML=ketQua;
+        document.getElementById("ketQua6").innerHTML = ketQua;
     }
-        // for (let i=1;i<1000;i++){
-        //     if (i % 7 ===0){
-        //         N++;
-        //         ketQua += i;
-        //     }
-        //     if (N>9){break;}
-        // }
-        // console.log(ketQua)
 
-
-====
-        let ketQua = 0;
-        let N = 0; //biến đếm N
-        let i=1;
-        while (N<30){
-            if (i%7===0){
-                N++
-                ketQua+=i;
-            }i++
-        console.log(ketQua)
-        }
-        document.getElementById("ketQua6").innerHTML=ketQua;
-    }
-    function bai7(){
+    function bai7() {
         let j;
-        for (let i=1;i<=100;i++){
-            if (i%3===0){
-                j ="Fizz"
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 === 0) {
+                j = "Fizz"
                 document.write(j + "<br>")
             }
-            if (i%5===0){
+            if (i % 5 === 0) {
                 j = "Buzz";
                 document.write(j + "<br>")
             }
-            if ((i%3===0) && (i%5===0)){
+            if ((i % 3 === 0) && (i % 5 === 0)) {
                 j = "FizzBuzz";
                 document.write(j + "<br>")
             }
-            if ((i%3!==0) && (i%5!==0)){
-                j=i;
+            if ((i % 3 !== 0) && (i % 5 !== 0)) {
+                j = i;
                 document.write(j + "<br>")
             }
         }
     }
->>>>>>> a3f6d6d (nopbai)
 
 
 </script>
 </body>
 </html>
+
