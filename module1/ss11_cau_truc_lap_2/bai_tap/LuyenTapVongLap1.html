@@ -63,6 +63,17 @@
     <span></span>
     <br>
 </div>
+<div>
+    Bài 8 <br>
+    Nhập khoảng số
+    <label for="min"></label><input type="number" id="min" placeholder="nhập số đầu" value="1">
+    <label for="max"></label><input type="number" id="max" placeholder="nhập số cuối" value="5"><br><br>
+    Đoán số: <label for="doan"></label><input type="number" id="doan" placeholder="Nhập số bạn đoán">
+    <button onclick="bai8()">Chơi</button>
+    <br>
+    <span id="ketQua8"></span><br>
+    <span id="ketQua8.1"></span>
+</div>
 
 <script>
     function bai1() {
@@ -142,8 +153,7 @@
             if (i % 7 === 0) {
                 n++;// biến đếm cộng 1
                 ketQua += i;
-                // console.log(ketQua)
-                console.log(ketQua)
+                // console.log(i)
             }
         }
         document.getElementById("ketQua6").innerHTML = ketQua;
@@ -154,21 +164,43 @@
         for (let i = 1; i <= 100; i++) {
             if (i % 3 === 0) {
                 j = "Fizz"
-                document.write(j + "<br>")
-            }
-            if (i % 5 === 0) {
+                document.write(j + "<br>");
+            } else if (i % 5 === 0) {
                 j = "Buzz";
-                document.write(j + "<br>")
-            }
-            if ((i % 3 === 0) && (i % 5 === 0)) {
+                document.write(j + "<br>");
+            } else if ((i % 3 === 0) && (i % 5 === 0)) {
                 j = "FizzBuzz";
-                document.write(j + "<br>")
+                document.write(j + "<br>");
             }
-            if ((i % 3 !== 0) && (i % 5 !== 0)) {
+            // ((i % 3 !== 0) && (i % 5 !== 0))
+            else {
                 j = i;
-                document.write(j + "<br>")
+                document.write(j + "<br>");
             }
         }
+    }
+
+    let check = true;
+    let random;
+    let count = 0;
+    function bai8() {
+        if (count<3){
+            if (check) {
+                let min = parseInt(document.getElementById("min").value);
+                let max = parseInt(document.getElementById("max").value);
+                random = (Math.floor(Math.random()*(max-min)))+min;
+                check = false;
+            }
+            let c = parseInt(document.getElementById("doan").value)
+            if (c === random) {
+                document.getElementById("ketQua8").innerHTML = "Kết quả là " + random + " bạn đã trả lời đúng !";
+            } else {
+                document.getElementById("ketQua8").innerHTML = "Kết quả sai lần thứ "+ count;
+            }
+        }else {
+            document.getElementById("ketQua8").innerHTML = "Bạn đã nhập sai quá 3 lần  ";
+        }
+        count++;
     }
 
 
