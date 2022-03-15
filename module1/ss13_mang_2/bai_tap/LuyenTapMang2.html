@@ -15,10 +15,33 @@
     <button onclick="bai2()">Sắp xếp</button>
     <br><span id="ketQua2"></span><br>
 </div>
-<div>bai</div>
-<div>bai</div>
-<div>bai</div>
-<div>bai</div>
+<div>
+    Bài 3
+    <input type="text" id="num3" placeholder="Nhập đi !!" value="c,s,c,2,6123,1">
+    <button onclick="bai3()">Hiển thị số trong mảng nhập</button>
+    <br><span id="ketQua3"></span><br>
+</div>
+<div>
+    Bài 4
+    <input type="text" id="word" placeholder="Nhập đi !!" value="Trần Thuận lớp C0222G2">
+    <button onclick="bai4()">Hiển thị số từ</button>
+    <br><span id="ketQua4"></span><br>
+</div>
+<div>
+    Bài 5
+    <input type="text" id="num5.1" placeholder="Nhập dãy số" value="1,3,5,7,9">
+    <input type="text" id="num5.2" placeholder="Nhập dãy số" value="3,7,1,9,5">
+    <button onclick="bai5()">kiểm tra 2 chuỗi có giống nhau hay không</button>
+    <br>
+    <span id="ketQua5"></span>
+</div>
+<div>
+    Bài 6
+    <input type="text" id="word6" style="width: 40%" placeholder="Nhập dãy số" value="Đây-là-bài-6-của-phần-luyện-tập-mảng-02">
+    <button onclick="bai6()">Biến đổi</button>
+    <br>
+    <span id="ketQua6"></span>
+</div>
 <script>
     function bai1(){
         let a = [
@@ -37,10 +60,65 @@
     }
     function bai2() {
         let a=(document.getElementById("num2").value).split(",");
-        a.sort();
-        document.getElementById("ketQua2").innerHTML = a
+        let y;
+        let n=(a.length-1);
+        for (let i = 0; i < n; i++) {
+            y = a[i];
+            a[i]=a[n];
+            a[n]=y;
+            n--;
+        }
+        document.getElementById("ketQua2").innerHTML=a.join(" ");
     }
-
+    function bai3(){
+        let num=(document.getElementById("num3").value).split(",");
+        console.log(num)
+        let charNumber;
+        let n=0;
+        for (let i = 0; i < num.length; i++) {
+            for (let j = 0; j < num[i].length; j++) {
+                charNumber=num[i][j];
+                if (charNumber%1===0){
+                    n++;
+                }
+            }
+        }
+        document.getElementById("ketQua3").innerHTML="Có "+n+" kí tự là số trong mảng ["+num+"]";
+    }
+    function bai4() {
+        let word=(document.getElementById("word").value).split(" ");
+        console.log(word)
+        for (let i = 0; i < word.length; i++) {
+            document.getElementById("ketQua4").innerHTML="Có "+ word.length+" từ trong chuỗi ";
+        }
+    }
+    function bai5() {
+        let a = (document.getElementById("num5.1").value).split(",");
+        let b = (document.getElementById("num5.2").value).split(",");
+        let n=0;
+        if (a.length===b.length){
+            for (let i = 0; i < a.length; i++) {
+                for (let j = 0; j < b.length; j++) {
+                    if (a[i] === b[j]) {
+                        n++
+                    }
+                }
+            }
+            if (n=a.length){
+                document.getElementById("ketQua5").innerHTML="2 hàm giống nhau"
+            }
+        }else {
+            document.getElementById("ketQua5").innerHTML="không giống nhau"
+        }
+    }
+    function bai6(){
+        let word=(document.getElementById("word6").value).toString();
+        console.log(typeof word)
+        console.log(word)
+        let newWord = word.replaceAll("-","_");
+        console.log(newWord)
+        document.getElementById("ketQua6").innerHTML=newWord;
+    }
 </script>
 </body>
 </html>
