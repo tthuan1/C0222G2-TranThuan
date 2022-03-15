@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 02</title>
+</head>
+<body>
+<div>
+    Bài 1
+    <button onclick="bai1()">Kết quả</button>
+</div>
+<div>
+    Bài 2
+    <input type="text" id="num2" placeholder="Nhập day số" value=" c, s, c, 2, 6, 1">
+    <button onclick="bai2()">Sắp xếp</button>
+    <br><span id="ketQua2"></span><br>
+</div>
+<div>bai</div>
+<div>bai</div>
+<div>bai</div>
+<div>bai</div>
+<script>
+    function bai1(){
+        let a = [
+            [1, 2, 1, 24],
+            [8, 11, 9, 4],
+            [7, 0, 7, 27],
+            [7, 4, 28, 14],
+            [3, 10, 26, 7]
+        ];
+        for (let i = 0; i < a.length; i++) {
+            document.write("row"+(i+1)+"<br>")
+            for (let j = 0; j < a[i].length; j++) {
+                document.write(a[i][j]+"<br>")
+            }
+        }
+    }
+    function bai2() {
+        let a=(document.getElementById("num2").value).split(",");
+        a.sort();
+        document.getElementById("ketQua2").innerHTML = a
+    }
+
+</script>
+</body>
+</html>

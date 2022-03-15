@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+<div>
+    bài 1
+    <button type="button" onclick="bai1()">Xác nhận</button>
+    <span id="ketQua1"></span><br><br>
+</div>
+<div>
+    bài 2
+    <input type="number" placeholder="Nhập số" id="num" value="025468">
+    <button type="button" onclick="bai2()">Xác nhận</button>
+    <span id="ketQua2"></span><br><br>
+</div>
+<div>
+    bài 3
+    <input type="text" placeholder="Nhập đi " id="char" value="The Quick Brown Fox">
+    <button type="button" onclick="bai3()">Xác nhận</button>
+    <span id="ketQua3"></span>
+</div>
+
+<script>
+    function bai1() {
+        let myColor = ["Red", "Green", "White", "Black"];
+        document.getElementById("ketQua1").innerHTML = myColor.join(", ");
+    }
+
+    function bai2() {
+        let num = document.getElementById("num").value;
+        let str = num.toString();
+        let result = [str[0]];
+
+        for (let x = 1; x < str.length; x++) {
+            if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+                result.push('-', str[x]);
+            } else {
+                result.push(str[x]);
+            }
+        }
+        document.getElementById("ketQua2").innerHTML = result.join('');
+    }
+
+    function bai3() {
+        let result="";
+        let char = document.getElementById("char").value;
+
+        for (let i=0; i < char.length;i++){
+            if (char[i]=== char[i].toLowerCase()){
+                result = char[i].toUpperCase()
+                // console.log(result)
+                document.write(result)
+            }else {
+                result = char[i].toLowerCase();
+                // console.log(result);
+                document.write(result)
+            }
+        }
+    }
+</script>
+</body>
+</html>

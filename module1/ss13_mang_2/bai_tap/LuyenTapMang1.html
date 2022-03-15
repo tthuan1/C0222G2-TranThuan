@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 01</title>
+</head>
+<body>
+<div>
+    Bài 1
+    <button onclick="bai1()">Số lớn hơn 10</button>
+    <span id="ketQua1"></span>
+</div>
+<br>
+<div>
+    Bài 2
+    <button onclick="bai2()">Số lớn nhất trong mảng</button>
+    <span id="ketQua2"></span>
+</div>
+<br>
+<div>
+    Bài 3
+    <button onclick="bai3()">Số lớn nhất trong mảng</button>
+    <br>
+    <span id="ketQua3"></span>
+    <span id="ketQua3.1"></span>
+</div>
+<br>
+<div>
+    Bài 4
+    <button onclick="bai4()">đảo các số 1 2 3 4 5 6 7 8 9</button>
+    <br>
+    <span id="ketQua4"></span>
+</div>
+<br>
+<div>
+    Bài 5
+    <input type="text" id="num5" placeholder="Nhập dãy số" value="-1.2, 2, 3, -4.6,-2">
+    <button onclick="bai5()">Đếm số nguyên âm trong một chuỗi</button>
+    <br>
+    <span id="ketQua5"></span>
+</div>
+<br>
+<div>
+    Bài 6
+    <input type="text" id="num6" placeholder="Nhập dãy số" value="2, 3, 4">
+    <button onclick="bai6()">kiếm có số này trong mảng không ?</button>
+    <br>
+    <span id="ketQua6"></span>
+</div>
+<br>
+<div>
+    Bài 7
+    <input type="text" id="num7" placeholder="Nhập 1 số" value="5">
+    <button onclick="bai7()">xác nhận</button>
+    <br>
+    Hàm: <span id="ham"></span><br>
+    Kết quả: <span id="ketQua7"></span>
+</div>
+<br>
+<div>
+    Bài 8
+    <input type="text" id="num8" placeholder="Nhập day số" value="1,5,2,7,4,8,9,-1,58">
+    <button onclick="bai8()">Sắp xếp</button>
+    <br><span id="ketQua8"></span><br>
+</div>
+<br>
+<div>
+    Bài 9
+    <input type="text" id="num9.1" placeholder="Nhập day số" value="1,2,3,4,5">
+    <input type="text" id="num9.2" placeholder="Nhập day số" value="11,12,13,14,15">
+    <button onclick="bai9()">Tạo hàm C</button>
+    <br><span id="ketQua9"></span><br>
+</div>
+<br>
+<script>
+    function bai1() {
+        let num = [1, 4, 16, 17, 31, -2, 0, -999, 10, 2];
+        let n = "";// số lượng số lớn hơn 10
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] >= 10) {
+                n++;
+                console.log(num[i])
+            }
+        }
+        document.getElementById("ketQua1").innerHTML = "có " + n + " số lớn hơn hoặc bằng 10";
+    }
+
+    function bai2() {
+        let num = [1, 4, 16, 17, 31, -2, 0, -999, 10, 2];
+        let max = "0";
+        for (let i = 0; i < num.length; i++) {
+            if (max < num[i]) {
+                max = num[i];
+            }
+        }
+        document.getElementById("ketQua2").innerHTML = "Số lớn nhất trong mảng là: " + max;
+    }
+
+    function bai3() {
+        let num = [1, 2, 3, 100.2, 3871920.12];
+        let max = "0";
+        let n = 0; // biến đếm
+        let trungBinh = 0;
+        for (let i = 0; i < num.length; i++) {
+            console.log(n)
+            if (num[i] % 1 === 0) {
+                if (max < num[i]) {
+                    max = num[i]
+                }
+                n++;
+                trungBinh += num[i];
+                console.log(trungBinh)
+            }
+        }
+        document.getElementById("ketQua3").innerHTML = "Số lớn nhất trong mảng là: " + max;
+        document.getElementById("ketQua3.1").innerHTML = "Giá trị trung bình là: " + trungBinh / n;
+    }
+
+    function bai4() {
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let y = "0"; // biến gán
+        let n = (num.length - 1); // biến giảm
+        for (let i = 0; i < n; i++) {
+            y = num[i];
+            num[i] = num[n];
+            num[n] = y;
+            n--;
+        }
+        document.getElementById("ketQua4").innerHTML = num;
+    }
+
+    function bai5() {
+        let input = document.getElementById("num5").value;
+        let num = input.split(",");
+        let n = 0;//Biến đếm số nguyên âm
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] < 0 && num[i] % 1 === 0) {
+                n++
+                console.log(num[i])
+            }
+            document.getElementById("ketQua5").innerHTML = "Có " + n + " số nguyên âm"
+        }
+    }
+
+    function bai6() {
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let a = (document.getElementById("num6").value).split(",");
+        let n = 0;//biến đếm
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < num.length; j++) {
+                if (Number(a[i]) === num[j]) {
+                    n++;
+                }
+            }
+        }
+        if (n === a.length) {
+            document.getElementById("ketQua6").innerHTML = a + " thuộc mảng số nguyên " + num;
+        } else {
+            document.getElementById("ketQua6").innerHTML = a + " không thuộc mảng số nguyên " + num;
+        }
+    }
+
+    function bai7() {
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let a = document.getElementById("num7").value;
+        let ketQua = "";
+        document.getElementById("ham").innerHTML = num;
+
+        for (let i = 0; i < num.length; i++) {
+            if (Number(a) === num[i]) {
+                num.splice(i, 1);
+                num.splice(num.length, 1, 0)
+            }
+            document.getElementById("ketQua7").innerHTML = num;
+        }
+    }
+
+    function bai8() {
+        let a = (document.getElementById("num8").value).split(",");
+        a.sort();
+        document.getElementById("ketQua8").innerHTML = a;
+    }
+
+    function bai9() {
+        let a = (document.getElementById("num9.1").value).split(",");
+        let b = (document.getElementById("num9.2").value).split(",");
+        let c;
+        c = a.concat(b)
+        document.getElementById("ketQua9").innerHTML = c;
+    }
+</script>
+</body>
+</html>

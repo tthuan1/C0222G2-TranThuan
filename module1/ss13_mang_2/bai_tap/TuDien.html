@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="input" placeholder="Nhập từ cần tìm" value="mèo">
+<button onclick="dich()">Dịch</button>
+<span id="ketQua"></span>
+
+<script>
+    function dich() {
+        let input = document.getElementById("input").value; // cái mà mình nhập vào
+        let vn = ["chó", "mèo", "người", "chuột"]; //mảng tiếng viêt
+        let es = ["dog", "cat", "people", "mouse"];
+        let ketQua = "";
+        for (let i = 0; i <= vn.length; i++) {
+            if (input === vn[i]){
+                ketQua = es[i];
+                console.log(ketQua)
+                break;
+            }
+            ketQua="không có";
+        }
+        document.getElementById("ketQua").innerHTML=ketQua;
+    }
+</script>
+</body>
+</html>
