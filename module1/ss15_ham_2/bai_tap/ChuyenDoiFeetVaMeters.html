@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+
+<input  type="number" oninput="input()" id="meterInput" placeholder="nhập đi">
+<!--<button onclick="input()">Biến đổi met sang foot</button>-->
+<span id="ketQua1"></span>
+<br>
+<input type="number" oninput="input()" id="footInput"  placeholder="nhập đi">
+<!--<button onclick="input()">Biến đổi met sang foot</button>-->
+<span id="ketQua2"></span>
+
+
+<script>
+    function input() {
+        let meter=parseInt(document.getElementById("meterInput").value);
+        let foot=parseFloat(document.getElementById("footInput").value);
+        let ketQua1=meterToFoot(meter);
+        let ketQua2=footToMeter(foot);
+        document.getElementById("ketQua1").innerHTML=ketQua1 + " foot";
+        document.getElementById("ketQua2").innerHTML=ketQua2 + " meter";
+    }
+
+    function meterToFoot(meter){
+        return 3.279 * meter;
+    }
+    function footToMeter(foot){
+        return 0.305 * foot;
+    }
+    
+    
+</script>
+
+
+</body>
+</html>

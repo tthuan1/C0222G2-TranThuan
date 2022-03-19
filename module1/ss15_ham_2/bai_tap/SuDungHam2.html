@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<div>
+    Bài 1
+    <input id="num" placeholder="Nhập số">
+    <button onclick="tinhBinhPhuong()">Bình phương</button><br>
+    <span id="ketQua"></span><br>
+</div>
+<div>
+    bài 2
+    <input id="num2" placeholder="Đường kính hình tròn" />
+    <button onclick="dienTichTron()">Diện tích hình tròn</button>
+    <button onclick="chuViTro()">Cho vi hình tròn</button><br>
+    Kết quả: <span id="ketQua2"></span>
+</div>
+<script>
+    function tinhBinhPhuong() {
+        let num = document.getElementById("num").value;
+        let ketQua= num * num;
+        return document.getElementById("ketQua").innerHTML="Bình phương của "+num+" là "+ketQua;
+    }
+    function dienTichTron() {
+        let num=document.getElementById("num2").value;
+        let dienTich=3.14*num*num;
+        document.getElementById("ketQua2").innerHTML="Diện tích là: "+dienTich;
+    }
+    function chuViTro() {
+        let num=document.getElementById("num2").value;
+        let chuVi=3.14*num;
+        document.getElementById("ketQua2").innerHTML="Chu vi là: "+chuVi;
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

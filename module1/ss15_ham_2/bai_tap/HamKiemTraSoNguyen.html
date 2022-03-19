@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number =prompt(" Nhập đi đừng ngại");
+    isPrime(number);
+
+
+    function isPrime(number) {
+        if (number < 10000){
+            if (number < 2) {
+                document.write("Không phải là số nguyên tố");
+                return;
+            } else {
+                for (let i = 2; i < number; i++) {
+                    if (number % i === 0) {
+                        document.write("Không phải là số nguyên tố");
+                        return;
+                    }
+                }
+            }
+            document.write("Là số nguyên tố")
+        }else {
+            document.write("Số nhập đã lớn hơn 10000")
+        }
+    }
+
+
+</script>
+</body>
+</html>

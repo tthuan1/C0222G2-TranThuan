@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<div>
+    Bài 1</br>
+    <span onclick="alertMessage()">Bấm đi đừng ngại</span><br>
+    <span id="alertMessage"></span>
+</div><br>
+<div>
+    Bài 2<br>
+    <input type="number" id="input2" oninput="input()" placeholder="nhập đi!">
+    <span id="input"></span>
+</div><br>
+<div>
+    Bài 3<br>
+    <input type="number" id="num1" placeholder="Nhập số a">
+    <input type="number" id="num2" placeholder="Nhập số b">
+    <button onclick="compare()" >So sánh</button>
+    <span id="ketQua3"></span>
+</div>
+<div>
+    Bài 5<br>
+    <input type="text" id="star"  placeholder="Nhập tên ngôi sao" value="Altair">
+    <button onclick="bai5()">Tìm kiếm</button><br>
+    <span id="ketQua5"></span>
+</div>
+
+<script>
+    let star1=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"]
+    let star2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"]
+    function input() {
+        let input=parseInt(document.getElementById("input2").value);
+        document.getElementById("input").innerHTML=input+" +  1 = "+(input+1);
+    }
+    function alertMessage() {
+        document.getElementById("alertMessage").innerHTML="xin chào";
+    }
+    function compare() {
+        let a=parseFloat(document.getElementById("num1").value);
+        let b=parseFloat(document.getElementById("num2").value);
+        if (a<=b){
+            document.getElementById("ketQua3").innerHTML= "tổng của 2 số là "+(a+b);
+        }else if (a>b){
+            document.getElementById("ketQua3").innerHTML= a+" lớn hơn "+b;
+        }else {
+            document.getElementById("ketQua3").innerHTML= "Nhập đi đừng để trống";
+        }
+    }
+    function addNumbers() {
+        let firstNum = 4;
+        let secondNum = 8;
+        let result = firstNum + secondNum;
+        return result;
+    }
+    function bai5(){
+        let star=document.getElementById("star").value
+        console.log(star)
+        for (let i = 0; i < star1.length; i++) {
+            if (star===star1[i]){
+                return document.getElementById("ketQua5").innerHTML=star2[i];
+            }
+        }
+        return document.getElementById("ketQua5").innerText="không tìm thấy ngôi sao nào";
+    }
+</script>
+</body>
+</html>

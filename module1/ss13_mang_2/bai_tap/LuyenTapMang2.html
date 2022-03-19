@@ -23,7 +23,7 @@
 </div>
 <div>
     Bài 4
-    <input type="text" id="word" placeholder="Nhập đi !!" value="Trần Thuận lớp C0222G2">
+    <input type="text" id="word" placeholder="Nhập đi !!" style="width: 40%" value=" Trần  Thuận  lớp  C0222G2 ">
     <button onclick="bai4()">Hiển thị số từ</button>
     <br><span id="ketQua4"></span><br>
 </div>
@@ -87,9 +87,13 @@
     }
     function bai4() {
         let word=(document.getElementById("word").value).split(" ");
-        console.log(word)
+        let n=0;
         for (let i = 0; i < word.length; i++) {
-            document.getElementById("ketQua4").innerHTML="Có "+ word.length+" từ trong chuỗi ";
+            if (word[i]!==""){
+                n++;
+                console.log(word[i])
+            }
+            document.getElementById("ketQua4").innerHTML="Có "+ n+" từ trong chuỗi ";
         }
     }
     function bai5() {

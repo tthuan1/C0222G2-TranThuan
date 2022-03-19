@@ -50,10 +50,9 @@
 <br>
 <div>
     Bài 7
-    <input type="text" id="num7" placeholder="Nhập 1 số" value="5">
+    <input type="text" id="num7" placeholder="Nhập 1 số" value="2">
     <button onclick="bai7()">xác nhận</button>
     <br>
-    Hàm: <span id="ham"></span><br>
     Kết quả: <span id="ketQua7"></span>
 </div>
 <br>
@@ -145,6 +144,8 @@
     function bai6() {
         let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         let a = (document.getElementById("num6").value).split(",");
+        console.log(typeof a);
+        // console.log(num)
         let n = 0;//biến đếm
         for (let i = 0; i < a.length; i++) {
             for (let j = 0; j < num.length; j++) {
@@ -161,18 +162,17 @@
     }
 
     function bai7() {
-        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        let a = document.getElementById("num7").value;
-        let ketQua = "";
-        document.getElementById("ham").innerHTML = num;
-
-        for (let i = 0; i < num.length; i++) {
-            if (Number(a) === num[i]) {
-                num.splice(i, 1);
-                num.splice(num.length, 1, 0)
+        let arr = [1,2,2,2,2,2,3,4];
+        let v = (document.getElementById("num7").value).split("");
+        for (let i = 0; i < arr.length; i++) {
+            if (Number(v)===arr[i]){
+                arr.splice(i,1)
+                arr.push(0);
+                i--;
+                console.log(arr)
             }
-            document.getElementById("ketQua7").innerHTML = num;
         }
+        document.getElementById("ketQua7").innerHTML=arr;
     }
 
     function bai8() {
