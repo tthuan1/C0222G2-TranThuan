@@ -193,11 +193,14 @@
     }
 
     function kiemTuTrongMang(num9) {
-        let aray = [1, 1, 2, 3, 3, 2, 5, 5, 5, 7, 7, 7, 7, 7]
+        let aray = ['1', '1', '2', '3', '3', '2', '5', '5', '5', '7', '7', '7', '7', '7','h','h','h']
+        console.log(aray)
+        console.log(typeof aray[0])
+        console.log(typeof aray[1])
         let n = 0;//biến đếm
         let ketQua;
         for (let i = 0; i < aray.length; i++) {
-            if (Number(num9) === aray[i]) {
+            if (num9 === aray[i]) {
                 n++;
             }
             ketQua = n;
