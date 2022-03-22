@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>công tắc và bóng đèn</title>
+</head>
+<style>
+
+</style>
+<body>
+<button type="submit" onclick="congTacDen()">Công Tắc</button><br>
+<span id="hienThi"></span>
+<script>
+    class Den {
+        constructor() {
+            this.trangThai = false;
+            this.pin = 100;
+        }
+
+        getPin() {
+            return this.pin;
+        }
+
+        setPin(pin) {
+            this.pin = pin;
+        }
+
+        getTrangThai() {
+            return this.trangThai;
+        }
+
+        setTrangThai(trangThai) {
+            this.trangThai = trangThai;
+        }
+
+        tatDen() {
+            this.trangThai = false;
+        }
+
+        batDen() {
+            this.trangThai = true;
+        }
+
+        giamPin() {
+            this.setPin(this.getPin() - 10);
+        }
+    }
+
+    class CongTac {
+        constructor() {
+            this.den = null;
+        }
+
+        getDen() {
+            return this.den;
+        }
+
+        setDen(den) {
+            this.den = den;
+        }
+
+        batDen() {
+            if (this.den.getPin() > 0) {
+                this.den.batDen();
+                this.den.giamPin();
+                console.log("Bat den!")
+                console.log("Pin: " + this.den.getPin() + "%");
+            } else {
+                this.den.tatDen();
+                console.log("Het pin!")
+            }
+        }
+
+        tatDen() {
+            this.den.tatDen();
+
+            console.log("Tat den!")
+        }
+    }
+
+    let den = new Den();
+    let congTac = new CongTac();
+    congTac.setDen(den);
+
+    function congTacDen() {
+        if (congTac.den.getTrangThai() === true) {
+            document.getElementById("hienThi").innerHTML="den dang tắc";
+            congTac.tatDen();
+        } else {
+            congTac.batDen();
+            document.getElementById("hienThi").innerHTML="den dang mở";
+
+        }
+    }
+</script>
+</body>
+</html>

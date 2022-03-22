@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+
+
+<script>
+
+    class Apple {
+        constructor(khoiLuong) {
+            this.khoiLuong = khoiLuong;
+        }
+
+        getTao() {
+            return this.khoiLuong;
+        }
+
+        setTao(khoiLuong) {
+            this.khoiLuong = khoiLuong;
+        }
+
+        eat() {
+            return this.setTao(this.getTao() - 1);
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight, apple) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+            this.apple = apple;
+        }
+
+        getHuman() {
+            return this.name + " giới tính " + this.gender + " cân nặng " + this.weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        anTao() {
+            if (this.apple.getTao() > 0) {
+                this.apple.eat();
+                "ăn táo";
+                return this.setWeight(this.getWeight() + 1);
+            } else {
+                "hết táo rồi"
+            }
+
+        }
+
+        noi() {
+            return "nói: !@£$%@£$%^£$%^";
+        }
+
+        kiemTraTao() {
+            document.write(apple.getTao())
+        }
+    }
+
+    let apple = new Apple(10);
+    let human = new Human('Adam', 'Nam', 70, apple);
+
+    for (let i = 0; i < 20; i++) {
+        i++;
+        console.log(human.getHuman());
+        human.anTao()
+        console.log(apple.getTao());
+        console.log(human.getHuman());
+        console.log(human.noi());
+        console.log("...")
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

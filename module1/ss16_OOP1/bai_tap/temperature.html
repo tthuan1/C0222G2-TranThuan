@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(nhietDo) {
+            this.nhietDo = nhietDo;
+        }
+
+        getCtoF() {
+            return (this.nhietDo * 33.8)
+        }
+
+        getCtoK() {
+            return (this.nhietDo * 274.15)
+        }
+    }
+
+    let temperature = new Temperature(25);
+    document.write(temperature.getCtoF()+"<br>");
+    document.write(temperature.getCtoK());
+    // console.log(temperature.getCtoF());
+    // console.log(temperature.getCtoK());
+
+</script>
+</body>
+</html>
