@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [[1, 2, 3, 4],[1, 2, 3, 4]];
+    let sum = 0;
+    for (let i = 0; i < num.length; i++) {
+        for (let j = 0; j < num[i].length; j++) {
+            tinhTongChan(num[i][j]);
+        }
+    }
+    console.log(sum)
+
+
+    function tinhTongChan(n){
+        if (n%2==0){
+            sum+=n;
+        }
+    }
+</script>
+</body>
+</html>

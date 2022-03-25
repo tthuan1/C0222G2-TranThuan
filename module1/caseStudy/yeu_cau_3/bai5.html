@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let num = ['1', '2', '3', '4', '5', '6'];
+    let menu = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    let tien = [10000, 50000, 10000, 15000, 10000, 40000];
+    let soLuong;
+    let sum;
+    let input = prompt("(1)Cafe \n" + "(2)Cam vắt \n" + "3)Nước ép cà rốt\n" + "(4)Nước ép cà chua\n" + "(5)Nước lọc \n" + "(6)Nước dừa\n" + "(7) kết thúc");
+    for (let i = 0; i < num.length; i++) {
+        for (let j = 0; j < input.length; j++) {
+            if (input[j] === num[i]) {
+                soLuong = prompt("bạn chọn " + menu[i]+ " có giá là: "+tien[i] + "vnd Hãy nhập số lượng ")
+                if (soLuong >= 0) {
+                    sum = soLuong * tien[i];
+                    document.write("Số tiền bạn phải trả là " + sum + " vnd"+"<br>");
+                    input = prompt("(1)Cafe \n" + "(2)Cam vắt \n" + "3)Nước ép cà rốt\n" + "(4)Nước ép cà chua\n" + "(5)Nước lọc \n" + "(6)Nước dừa\n" + "(7) kết thúc");
+                }
+
+            }
+            if (input<1||input>7){
+                input = prompt("(1)Cafe \n" + "(2)Cam vắt \n" + "3)Nước ép cà rốt\n" + "(4)Nước ép cà chua\n" + "(5)Nước lọc \n" + "(6)Nước dừa\n" + "(7) kết thúc");
+            }
+
+        }
+        if (input === "7") {
+            document.write(" Chương trình kết thúc");
+            break;
+        }
+    }
+
+
+</script>
+</body>
+</html>

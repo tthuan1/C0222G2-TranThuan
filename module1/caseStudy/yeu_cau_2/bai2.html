@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nguyenAm= ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
+    let a =prompt("nhập một ký tự ");
+    let shows="0";
+    for (let i = 0; i < nguyenAm.length; i++) {
+        if (a===nguyenAm[i]){
+            shows =a+ " là nguyên âm";
+            break;
+        }
+        shows=a+"không là nguyên âm";
+    }
+    document.write(shows);
+</script>
+</body>
+</html>

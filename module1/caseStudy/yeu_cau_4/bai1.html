@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = ((prompt("THUan  tRAn                     c0222G2")).toLowerCase());
+    let newInput = input.split(" ");
+    for (let i = 0; i < newInput.length; i++) {
+        if (newInput[i] === "") {
+            newInput.splice(i, 1);
+            i--;
+        }
+    }
+    for (let i = 0; i < newInput.length; i++) {
+        newInput[i] = (newInput[i][0]).toUpperCase() + newInput[i].substring(1);
+    }
+    newInput=newInput.join(" ");
+    document.write(newInput);
+    console.log(newInput)
+
+
+</script>
+</body>
+</html>

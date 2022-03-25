@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tu=[5,2,5];
+    let mau=[6,3,4];
+    let num=0;
+    let max=tu[0]/mau[0];
+    for (let i = 0; i < tu.length; i++) {
+        num=tu[i]/mau[i];
+        if (max<num){
+            max=num;
+            num=i;
+        }
+    }
+    console.log(max+"là số lớn nhất, có chỉ số là "+num);
+</script>
+</body>
+</html>
