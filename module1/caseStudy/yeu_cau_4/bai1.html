@@ -6,22 +6,47 @@
 </head>
 <body>
 <script>
-    let input = ((prompt("THUan  tRAn                     c0222G2")).toLowerCase());
-    let newInput = input.split(" ");
-    for (let i = 0; i < newInput.length; i++) {
-        if (newInput[i] === "") {
-            newInput.splice(i, 1);
-            i--;
+    // let input = ((prompt("THUan  tRAn                     c0222G2")).toLowerCase());
+    // let newInput = input.split(" ");
+    // for (let i = 0; i < newInput.length; i++) {
+    //     if (newInput[i] === "") {
+    //         newInput.splice(i, 1);
+    //         i--;
+    //     }
+    // }
+    // for (let i = 0; i < newInput.length; i++) {
+    //     newInput[i] = (newInput[i][0]).toUpperCase() + newInput[i].substring(1);
+    // }
+    // newInput=newInput.join(" ");
+    // document.write(newInput);
+    // console.log(newInput)
+    let name = prompt("tRần    thUận     c0222G2");
+
+    function bienDoi(name) {
+        let nameMax;
+        name = name.toLowerCase();
+        name = name.split(" ");
+        for (let i = 0; i < name.length; i++) {
+            if (name[i] === "") {
+                name.splice(i, 1);
+                i--;
+            }
         }
+        for (let i = 1; i < name.length; i++) {
+            let max = name[0].length;
+            if (name[i].length > max) {
+                max = name[i].length;
+                nameMax = name[i];
+            }
+        }
+        for (let i = 0; i < name.length; i++) {
+            name[i] = (name[i][0]).toUpperCase() + name[i].substring(1);
+        }
+        name = name.join(" ");
+        return alert(name + "\nTừ dài nhất là: " + nameMax)
     }
-    for (let i = 0; i < newInput.length; i++) {
-        newInput[i] = (newInput[i][0]).toUpperCase() + newInput[i].substring(1);
-    }
-    newInput=newInput.join(" ");
-    document.write(newInput);
-    console.log(newInput)
 
-
+    bienDoi(name);
 </script>
 </body>
 </html>

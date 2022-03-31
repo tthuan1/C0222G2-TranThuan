@@ -6,18 +6,45 @@
 </head>
 <body>
 <script>
-    let tu=[5,2,5];
-    let mau=[6,3,4];
-    let num=0;
-    let max=tu[0]/mau[0];
-    for (let i = 0; i < tu.length; i++) {
-        num=tu[i]/mau[i];
-        if (max<num){
-            max=num;
-            num=i;
-        }
+    let numerators=[];
+    let denominators=[];
+    let size=parseInt(prompt("Nhập số lượng các phân số"));
+    for (let i = 1; i <= size; i++) {
+        numerators.push(prompt("Nhập tử số thứ"+i));
+        denominators.push(prompt("Nhập mẩu số thứ"+i));
     }
-    console.log(max+"là số lớn nhất, có chỉ số là "+num);
+    function maxFraction(numerators,denominators ) {
+        let max=0;
+        let num=0;
+        let tuMax=0;
+        let mauMax=0;
+        for (let i = 0; i < numerators.length; i++) {
+            num=numerators[i]/denominators[i];
+            if (max<num){
+                max=num;
+                tuMax=numerators[i];
+                mauMax=denominators[i];
+                num=i;
+            }
+        }
+        return alert(tuMax+"/"+mauMax+" là phân số lớn nhất \n Có chỉ số là: "+num);
+    }
+maxFraction(numerators,denominators);
+
+
+
+    // let tu=[5,2,5];
+    // let mau=[6,3,4];
+    // let num=0;
+    // let max=tu[0]/mau[0];
+    // for (let i = 0; i < tu.length; i++) {
+    //     num=tu[i]/mau[i];
+    //     if (max<num){
+    //         max=num;
+    //         num=i;
+    //     }
+    // }
+    // console.log(max+"là số lớn nhất, có chỉ số là "+num);
 </script>
 </body>
 </html>

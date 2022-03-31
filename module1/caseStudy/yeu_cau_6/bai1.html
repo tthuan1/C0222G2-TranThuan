@@ -2,9 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Xổ số NAUHT</title>
 </head>
+<style>
+    .body {
+        width: 40%;
+        background-color: #dddddd;
+        height: auto;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    .input {
+        margin: auto;
+        width: 100%;
+    }
+
+    input {
+        width: 4.3%;
+        padding: 20px;
+        border-radius: 100px;
+        text-align: center;
+    }
+
+    button {
+        padding: 20px;
+        border-radius: 100px;
+        width: 200px;
+
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
 <body>
+<div class="body">
+    <div><h1>Xổ số NAUHT</h1></div>
+    <div class="input">
+        <h2>Chọn số</h2>
+        <input id="num1">
+        <input id="num2">
+        <input id="num3">
+        <input id="num4">
+        <input id="num5">
+        <input id="num6">
+    </div>
+    <br>
+    <div class="input">
+        <h2>Kết quả</h2>
+        <input id="result1">
+        <input id="result2">
+        <input id="result3">
+        <input id="result4">
+        <input id="result5">
+        <input id="result6">
+    </div>
+    <div>
+        <button onclick="muaVe()">Mua vé</button>
+        <button onclick="xemKetQua()">Xem kết quả</button>
+    </div>
+</div>
+
+<script>
+    class VeSo {
+        constructor(number1, number2, number3, number4, number5, number6, grade="") {
+            this.number1 = number1;
+            this.number2 = number2;
+            this.number3 = number3;
+            this.number4 = number4;
+            this.number5 = number5;
+            this.number6 = number6;
+        }
+
+        getNumber1() {
+            return this.number1;
+        }
+
+        getNumber2() {
+            return this.number2;
+        }
+
+        getNumber3() {
+            return this.number3;
+        }
+
+        getNumber4() {
+            return this.number4;
+        }
+
+        getNumber5() {
+            return this.number5;
+        }
+
+        getNumber6() {
+            return this.number6;
+        }
+
+        setNumber1(number1) {
+            this.number1 = number1;
+        }
+
+        setNumber2(number2) {
+            this.number2 = number2;
+        }
+
+        setNumber3(number3) {
+            this.number3 = number3;
+        }
+
+        setNumber4(number4) {
+            this.number4 = number4;
+        }
+
+        setNumber5(number5) {
+            this.number5 = number5;
+        }
+
+        setNumber6(number6) {
+            this.number6 = number6;
+        }
+    }
+
+
+    let veSo = new VeSo(soThu1,soThu2,soThu3,soThu4,soThu5,soThu6);
+    function muaVe() {
+        let input = prompt("Bạn có 2 lựa chọn:\n(1) Bạn muốn tự chọn số\n(2) Hệ thống tự ramdom");
+        if (input === "1") {
+            // input = prompt("Bạn hãy nhập 6 số cách nhau bằng dấu , ")
+        } else if (input === "2") {
+            chonVe();
+        }
+    }
+
+    function chonVe() {
+        let num=[];
+        for (let i = 0; i < 6; i++) {
+            num[i]=Math.floor(Math.random() * 101);
+            if (num[i]<10){
+                num[i]="0"+num[i];
+            }
+        }
+        console.log(num)
+        document.getElementById("num1").value=num[0];
+        document.getElementById("num2").value=num[1];
+        document.getElementById("num3").value=num[2];
+        document.getElementById("num4").value=num[3];
+        document.getElementById("num5").value=num[4];
+        document.getElementById("num6").value=num[5];
+    }
+
+    function xemKetQua() {
+        let ketQua = ['01', '03', '09', '23', '45', '89', '78']
+        console.log(ketQua)
+        document.getElementById("result1").value=ketQua[0];
+        document.getElementById("result2").value=ketQua[1];
+        document.getElementById("result3").value=ketQua[2];
+        document.getElementById("result4").value=ketQua[3];
+        document.getElementById("result5").value=ketQua[4];
+        document.getElementById("result6").value=ketQua[5];
+    }
+</script>
+
 
 </body>
 </html>

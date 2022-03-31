@@ -6,13 +6,27 @@
 </head>
 <body>
 <script>
-    let a = [1, 2, 3, 4, 5, 6];
-    let b = [];
+    let a=[];
+    let b=[];
+    let n=parseInt(prompt("nhập độ dài mảng a"));
+    for (let i = 0; i < n; i++) {
+        a.push(parseInt(prompt("Nhập vào số nguyên")));
+    }
     b[0] = a[0];
     for (let i = 1; i < a.length; i++) {
         b[i] = b[i - 1] + a[i];
     }
-    console.log(b);
+    alert("mảng a là "+a+"\n"+"Prefix Sums của a là: "+b);
+
+
+
+    // let a = [1, 2, 3, 4, 5, 6];
+    // let b = [];
+    // b[0] = a[0];
+    // for (let i = 1; i < a.length; i++) {
+    //     b[i] = b[i - 1] + a[i];
+    // }
+    // console.log(b);
 </script>
 </body>
 </html>

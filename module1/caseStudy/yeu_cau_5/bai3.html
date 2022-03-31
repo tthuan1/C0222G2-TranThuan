@@ -7,20 +7,45 @@
 <body>
 <script>
     let num = [[1, 2, 3, 4, 5], [6, 7, 8, 9],[-1,4,5,99,102]];
-    let max = num[0][0];
-    let min = num[0][0];
-    for (let i = 0; i < num.length; i++) {
-        for (let j = 0; j < num[i].length; j++) {
-            if (max < num[i][j]) {
-                max = num[i][j];
-            }
-            if (min>num[i][j]){
-                min = num[i][j];
+
+    function timGiaTriMax(num) {
+        let max = num[0][0];
+        for (let i = 0; i < num.length; i++) {
+            for (let j = 0; j < num[i].length; j++) {
+                if (max < num[i][j]) {
+                    max = num[i][j];
+                }
             }
         }
+        return max;
     }
-    console.log(max);
-    console.log(min);
+    function timGiaTriMin(num) {
+        let min = num[0][0];
+        for (let i = 0; i < num.length; i++) {
+            for (let j = 0; j < num[i].length; j++) {
+                if (min>num[i][j]){
+                    min = num[i][j];
+                }
+            }
+        }
+        return min;
+    }
+    document.write("Giá trị lớn nhất trong mảng: "+timGiaTriMax(num)+"<br>");
+    document.write("Giá trị nhỏ nhất trong mảng: "+timGiaTriMin(num));
+
+    // let num = [[1, 2, 3, 4, 5], [6, 7, 8, 9],[-1,4,5,99,102]];
+    // let max = num[0][0];
+    // let min = num[0][0];
+    // for (let i = 0; i < num.length; i++) {
+    //     for (let j = 0; j < num[i].length; j++) {
+    //         if (max < num[i][j]) {
+    //             max = num[i][j];
+    //         }
+    //         if (min>num[i][j]){
+    //             min = num[i][j];
+    //         }
+    //     }
+    // }
 </script>
 </body>
 </html>

@@ -6,15 +6,15 @@
 </head>
 <body>
 <script>
-    let nguyenAm= ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
-    let a =prompt("nhập một ký tự ");
-    let shows="0";
+    let nguyenAm = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
+    let a = prompt("nhập một ký tự ");
+    let shows = "";
     for (let i = 0; i < nguyenAm.length; i++) {
-        if (a===nguyenAm[i]){
-            shows =a+ " là nguyên âm";
+        if (a === nguyenAm[i]) {
+            shows = a + " là nguyên âm";
             break;
         }
-        shows=a+"không là nguyên âm";
+        shows = a + " không là nguyên âm";
     }
     document.write(shows);
 </script>

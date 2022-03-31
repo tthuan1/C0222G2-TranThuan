@@ -6,21 +6,40 @@
 </head>
 <body>
 <script>
-    let num = [[1, 2, 3, 4],[1, 2, 3, 4]];
+    let m = parseInt(prompt("Nhập số dòng của ma trận"));
+    let n = parseInt(prompt("Nhập số cột của ma trận"));
+    let num = [];
     let sum = 0;
-    for (let i = 0; i < num.length; i++) {
-        for (let j = 0; j < num[i].length; j++) {
-            tinhTongChan(num[i][j]);
+
+    function tinhTongSoChan(m, n) {
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                num.push(prompt("nhập giá trị cáo mà trận"));
+            }
+            if (Number(num[i]) % 2 === 0) {
+                sum += Number(num[i]);
+            }
         }
+        return sum;
     }
-    console.log(sum)
+    document.write("Tổng các số chẳn trong ma trận này là: "+tinhTongSoChan(m, n))
 
 
-    function tinhTongChan(n){
-        if (n%2==0){
-            sum+=n;
-        }
-    }
+    // let num = [[1, 2, 3, 4],[1, 2, 3, 4]];
+    // let sum = 0;
+    // for (let i = 0; i < num.length; i++) {
+    //     for (let j = 0; j < num[i].length; j++) {
+    //         tinhTongChan(num[i][j]);
+    //     }
+    // }
+    // console.log(sum)
+    //
+    //
+    // function tinhTongChan(n){
+    //     if (n%2==0){
+    //         sum+=n;
+    //     }
+    // }
 </script>
 </body>
 </html>
