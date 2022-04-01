@@ -1,9 +1,4 @@
-//        Biến i kiểu số nguyên, có giá trị là 10
-//        Biến f kiểu số thực, có giá trị là 20.5
-//        Biến d kiểu số thực lớn, có giá trị là 20.5
-//        Biến b kiểu logic, có giá trị là true
-//        Biến c kiểu ký tự, có giá trị là 'a'
-//        Biến s kiểu chuỗi, có giá trị là "Hà Nội".
+package ss1_introduction_to_java.thuc_hanh;
 public class KhaiBaoVaSuDungBien {
     public static void main(String[] args) {
         int i=10;

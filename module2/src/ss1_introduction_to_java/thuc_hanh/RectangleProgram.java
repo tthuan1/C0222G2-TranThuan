@@ -1,3 +1,5 @@
+package ss1_introduction_to_java.thuc_hanh;
+
 import java.util.Scanner;
 
 public class RectangleProgram {
@@ -18,3 +20,4 @@ public class RectangleProgram {
 
     }
 }
+
