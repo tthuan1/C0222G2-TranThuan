@@ -9,7 +9,6 @@ public class SoCanNangCuaCoThe {
             double weight=Double.parseDouble(scanner.nextLine());
             System.out.print("Nhập chiều cao: ");
             double height=Double.parseDouble(scanner.nextLine());
-
             double  bmi = weight / Math.pow(height, 2);
         if (bmi < 18){
             System.out.print("Thiếu cân");
