@@ -2,7 +2,7 @@ package ss2_vong_lap.bai_tap;
 
 import java.util.Scanner;
 
-public class HienThiCacLoaiHinh {
+public class ShowGeometries {
     public static void main(String[] args) {
         int choice=-1;
         String str = "";

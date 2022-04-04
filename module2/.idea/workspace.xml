@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="1/4">
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/bai_tap/HienThiCacLoaiHinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/thuc_hanh/KiemTraSoNguyenTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/thuc_hanh/MenuChoUngDung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/thuc_hanh/TinhTienLaiChoVay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/thuc_hanh/UocChungLonNhat.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="3/4">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss1_introduction_to_java/bai_tap/NumbersToLetters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/bai_tap/Prime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/bai_tap/PrimesBelow100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/XoaPhanTuKhoiMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang/thuc_hanh/ChuyenDoiNhietDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang/thuc_hanh/DaoNguocCacPhanTuCuaMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang/thuc_hanh/GiaTriLonNhatTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang/thuc_hanh/GiaTriNhoNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang/thuc_hanh/TimGiaTriTrongMang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2_project/ss1_introduction_to_java/thuc_hanh/SoCanNangCuaCoThe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2_project/ss1_introduction_to_java/thuc_hanh/SoCanNangCuaCoThe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss1_introduction_to_java/bai_tap/ChuyenDoiTienTe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss1_introduction_to_java/bai_tap/CurrencyConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss1_introduction_to_java/bai_tap/HienThiLoiChao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss1_introduction_to_java/bai_tap/ShowGreeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss1_introduction_to_java/bai_tap/UngDungDocSoThanhChu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss2_vong_lap/bai_tap/HienThiCacLoaiHinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_vong_lap/bai_tap/ShowGeometries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +37,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="27BpxIfAa9U4eWjltY8rsUQO0bS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,13 +53,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.HienThiCacLoaiHinh">
-    <configuration name="HienThiCacLoaiHinh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap.bai_tap.HienThiCacLoaiHinh" />
+  <component name="RunManager" selected="Application.DeleteElementInArray">
+    <configuration name="ChuyenDoiNhietDo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang.thuc_hanh.ChuyenDoiNhietDo" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap.bai_tap.*" />
+          <option name="PATTERN" value="ss3_mang.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KiemTraSoNguyenTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap.thuc_hanh.KiemTraSoNguyenTo" />
+    <configuration name="DeleteElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang.bai_tap.DeleteElementInArray" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap.thuc_hanh.*" />
+          <option name="PATTERN" value="ss3_mang.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuChoUngDung" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap.thuc_hanh.MenuChoUngDung" />
+    <configuration name="GiaTriLonNhatTrongMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang.thuc_hanh.GiaTriLonNhatTrongMang" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap.thuc_hanh.*" />
+          <option name="PATTERN" value="ss3_mang.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TinhTienLaiChoVay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap.thuc_hanh.TinhTienLaiChoVay" />
+    <configuration name="GiaTriNhoNhat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang.thuc_hanh.GiaTriNhoNhat" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap.thuc_hanh.*" />
+          <option name="PATTERN" value="ss3_mang.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UocChungLonNhat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap.thuc_hanh.UocChungLonNhat" />
+    <configuration name="TimGiaTriTrongMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang.thuc_hanh.TimGiaTriTrongMang" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap.thuc_hanh.*" />
+          <option name="PATTERN" value="ss3_mang.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HienThiCacLoaiHinh" />
-        <item itemvalue="Application.MenuChoUngDung" />
-        <item itemvalue="Application.UocChungLonNhat" />
-        <item itemvalue="Application.TinhTienLaiChoVay" />
-        <item itemvalue="Application.KiemTraSoNguyenTo" />
+        <item itemvalue="Application.DeleteElementInArray" />
+        <item itemvalue="Application.TimGiaTriTrongMang" />
+        <item itemvalue="Application.GiaTriNhoNhat" />
+        <item itemvalue="Application.ChuyenDoiNhietDo" />
+        <item itemvalue="Application.GiaTriLonNhatTrongMang" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +141,8 @@
       <workItem from="1648807734907" duration="630000" />
       <workItem from="1648818577613" duration="824000" />
       <workItem from="1648960657691" duration="1588000" />
-      <workItem from="1648970788618" duration="4198000" />
+      <workItem from="1648970788618" duration="7830000" />
+      <workItem from="1649037672019" duration="11352000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -149,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648807638784</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3/4">
+      <created>1648975698907</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648975698907</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +184,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/4" />
+    <MESSAGE value="3/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="3/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
