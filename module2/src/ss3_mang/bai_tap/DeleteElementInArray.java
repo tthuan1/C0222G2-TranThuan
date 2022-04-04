@@ -11,8 +11,6 @@ public class DeleteElementInArray {
         System.out.print("Nhập số phần tử trong mảng: ");
         size = scanner.nextInt();
 
-
-
         int[] array = new int[size]; // tạo mảng nhập số ban đầu
         for (int i = 0; i < array.length; i++) {
             System.out.print("Nhập phần tử thứ: " + (i + 1) + ": ");
@@ -22,18 +20,19 @@ public class DeleteElementInArray {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]+"\t");
         }
-
-        int[] newArray=new int[size];//tạo mảng phần tử đã xoá
         System.out.print("\nNhập số muốn xoá: ");
         X = scanner.nextInt();
         for (int i = 0; i < array.length; i++) {
             if (array[i]==X) {
-
+                for (int j = i; j < array.length-1; j++) {
+                    array[j]=array[j+1];
+                }
+                array[array.length-1]=0;
+                i--;
             }
         }
-
         //In ra kết quả mảng đã xoá phần tử
-        for (int i = 0; i < newArray.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]+"\t");
         }
 
