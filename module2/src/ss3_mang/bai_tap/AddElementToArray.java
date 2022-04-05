@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AddElementToArray {
     public static void main(String[] args) {
-        int X;
+        int x;
         int index;
 
         Scanner scanner = new Scanner(System.in);
@@ -22,20 +22,16 @@ public class AddElementToArray {
         }
 
         System.out.print("\nNhập số cần chèn: ");
-        X = scanner.nextInt();
+        x = scanner.nextInt();
         System.out.print("\nNhập vị trí cần chèn: ");
         index = scanner.nextInt();
         if (index <= -1 || index >= array.length) {
             System.out.print("Không chèn được phần tử vào mảng\n");
         } else {
-            for (int i = 0; i < array.length; i++) {
-                if (index == i) {
-                    for (int j = array.length - 1; j > index; j--) {
-                        array[j] = array[j - 1];
-                    }
-                    array[index] = X;
-                }
+            for (int i = array.length - 1; i > index; i--) {
+                array[i] = array[i - 1];
             }
+            array[index] = x;
         }
 
         System.out.print("\nMảng là: ");

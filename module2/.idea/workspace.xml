@@ -4,6 +4,7 @@
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="5/4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss3_mang/bai_tap/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/AddElementToArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_mang/bai_tap/DeleteElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/DeleteElementInArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,10 +110,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AddElementToArray" />
+        <item itemvalue="Application.DeleteElementInArray" />
         <item itemvalue="Application.ElementMaxInTwoDimensionalArray" />
         <item itemvalue="Application.MinInArray" />
         <item itemvalue="Application.MergeArray" />
-        <item itemvalue="Application.DeleteElementInArray" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +132,7 @@
       <workItem from="1648970788618" duration="7830000" />
       <workItem from="1649037672019" duration="11692000" />
       <workItem from="1649062833598" duration="13324000" />
-      <workItem from="1649121288947" duration="2637000" />
+      <workItem from="1649121288947" duration="3907000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649122965466</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="5/4">
+      <created>1649123977165</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649123977165</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

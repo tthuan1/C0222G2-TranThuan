@@ -6,7 +6,7 @@ public class DeleteElementInArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int size;
-        int X;
+        int x;
 
         System.out.print("Nhập số phần tử trong mảng: ");
         size = scanner.nextInt();
@@ -21,9 +21,9 @@ public class DeleteElementInArray {
             System.out.print(array[i]+"\t");
         }
         System.out.print("\nNhập số muốn xoá: ");
-        X = scanner.nextInt();
+        x = scanner.nextInt();
         for (int i = 0; i < array.length; i++) {
-            if (array[i]==X) {
+            if (array[i]==x) {
                 for (int j = i; j < array.length-1; j++) {
                     array[j]=array[j+1];
                 }
