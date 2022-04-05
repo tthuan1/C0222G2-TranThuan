@@ -7,52 +7,41 @@ public class AddElementToArray {
         int X;
         int index;
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 
-        int[] array=new int[10];
-        array[0]=10;
-        array[1]=4;
-        array[2]=6;
-        array[3]=7;
-        array[4]=8;
+        int[] array = new int[10];
+        array[0] = 10;
+        array[1] = 4;
+        array[2] = 6;
+        array[3] = 7;
+        array[4] = 8;
         System.out.print("Mảng là: ");
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+"\t");
+            System.out.print(array[i] + "\t");
         }
 
         System.out.print("\nNhập số cần chèn: ");
-        X=scanner.nextInt();
+        X = scanner.nextInt();
         System.out.print("\nNhập vị trí cần chèn: ");
-        index=scanner.nextInt();
-        if (index<=-1||index>= array.length){
+        index = scanner.nextInt();
+        if (index <= -1 || index >= array.length) {
             System.out.print("Không chèn được phần tử vào mảng\n");
-        }else {
-            int temp=array[index+1];
+        } else {
             for (int i = 0; i < array.length; i++) {
-                if (index==i){
-                    int[] newArray=new int[array.length-i];
-                    for (int j = 0; j < newArray.length; j++) {
-                        newArray[j]=array[j+i];
+                if (index == i) {
+                    for (int j = array.length - 1; j > index; j--) {
+                        array[j] = array[j - 1];
                     }
-                    System.out.print("Mảng mới là: ");
-                    for (int j = 0; j < newArray.length; j++) {
-                        System.out.print(newArray[j]+"\t");
-                    }
-
-                    for (int j = 0; j < array.length; j++) {
-
-                    }
+                    array[index] = X;
                 }
             }
         }
 
-        System.out.print("Mảng là: ");
+        System.out.print("\nMảng là: ");
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+"\t");
+            System.out.print(array[i] + "\t");
         }
-
-
 
 
     }

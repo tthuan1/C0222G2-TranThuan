@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="5/4">
-      <change afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/ElementMaxInTwoDimensionalArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_mang/bai_tap/MinInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/MinInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_mang/bai_tap/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/AddElementToArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.ElementMaxInTwoDimensionalArray">
+  <component name="RunManager" selected="Application.AddElementToArray">
     <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss3_mang.bai_tap.AddElementToArray" />
       <module name="module2_project" />
@@ -109,10 +108,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AddElementToArray" />
         <item itemvalue="Application.ElementMaxInTwoDimensionalArray" />
         <item itemvalue="Application.MinInArray" />
         <item itemvalue="Application.MergeArray" />
-        <item itemvalue="Application.AddElementToArray" />
         <item itemvalue="Application.DeleteElementInArray" />
       </list>
     </recent_temporary>
@@ -132,7 +131,7 @@
       <workItem from="1648970788618" duration="7830000" />
       <workItem from="1649037672019" duration="11692000" />
       <workItem from="1649062833598" duration="13324000" />
-      <workItem from="1649121288947" duration="1598000" />
+      <workItem from="1649121288947" duration="2637000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -176,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649092169453</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="5/4">
+      <created>1649122965466</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649122965466</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
