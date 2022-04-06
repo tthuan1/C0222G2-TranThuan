@@ -17,8 +17,8 @@ public class AddElementToArray {
         array[3] = 7;
         array[4] = 8;
         System.out.print("Mảng là: ");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + "\t");
+        for (int j : array) {
+            System.out.print(j + "\t");
         }
 
         System.out.print("\nNhập số cần chèn: ");
@@ -35,8 +35,8 @@ public class AddElementToArray {
         }
 
         System.out.print("\nMảng là: ");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + "\t");
+        for (int i:array) {
+            System.out.print(i + "\t");
         }
 
 

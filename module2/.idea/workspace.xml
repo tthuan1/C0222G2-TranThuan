@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="5/4">
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/thuc_hanh/class_rectangle/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/thuc_hanh/class_rectangle/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss3_mang/bai_tap/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/AddElementToArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_mang/bai_tap/DeleteElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang/bai_tap/DeleteElementInArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.AddElementToArray">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss3_mang.bai_tap.AddElementToArray" />
       <module name="module2_project" />
@@ -81,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang.bai_tap.MergeArray" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.thuc_hanh.Main" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang.bai_tap.*" />
+          <option name="PATTERN" value="ss4_class_and_object_in_java.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang.bai_tap.MinInArray" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.thuc_hanh.class_rectangle.Main" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang.bai_tap.*" />
+          <option name="PATTERN" value="ss4_class_and_object_in_java.thuc_hanh.class_rectangle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.AddElementToArray" />
         <item itemvalue="Application.DeleteElementInArray" />
         <item itemvalue="Application.ElementMaxInTwoDimensionalArray" />
-        <item itemvalue="Application.MinInArray" />
-        <item itemvalue="Application.MergeArray" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +133,7 @@
       <workItem from="1648970788618" duration="7830000" />
       <workItem from="1649037672019" duration="11692000" />
       <workItem from="1649062833598" duration="13324000" />
-      <workItem from="1649121288947" duration="3907000" />
+      <workItem from="1649121288947" duration="11893000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649123977165</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="5/4">
+      <created>1649148136896</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649148136896</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
