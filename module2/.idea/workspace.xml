@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="6/4">
       <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap/ThuatToan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/bai_tap/StopWatch/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/bai_tap/StopWatch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/bai_tap/Fan/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/bai_tap/Fan/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/bai_tap/StopWatch/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object_in_java/bai_tap/StopWatch/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +43,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.bai_tap.QuadraticEquation.Main" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss4_class_and_object_in_java.bai_tap.QuadraticEquation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.thuc_hanh.class_rectangle.Main" />
-      <module name="module2_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss4_class_and_object_in_java.thuc_hanh.class_rectangle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,11 +71,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.thuc_hanh.class_rectangle.Main" />
+      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.bai_tap.Fan.Main" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss4_class_and_object_in_java.thuc_hanh.class_rectangle.*" />
+          <option name="PATTERN" value="ss4_class_and_object_in_java.bai_tap.Fan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.ThuatToan" />
         <item itemvalue="Application.ShowGeometries" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +134,7 @@
       <workItem from="1648970788618" duration="7830000" />
       <workItem from="1649037672019" duration="11692000" />
       <workItem from="1649062833598" duration="13324000" />
-      <workItem from="1649121288947" duration="27278000" />
+      <workItem from="1649121288947" duration="30947000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -225,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649217402867</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="6/4">
+      <created>1649257272799</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257272799</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
