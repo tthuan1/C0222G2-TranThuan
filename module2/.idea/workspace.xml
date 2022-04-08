@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="7/4">
-      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/thuc_hanh/geometric_object/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/thuc_hanh/geometric_object/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/thuc_hanh/geometric_object/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/thuc_hanh/geometric_object/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/thuc_hanh/geometric_object/Test.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="8/4">
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_circle_and_class_cylinder/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_circle_and_class_cylinder/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_circle_and_class_cylinder/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_point2D_and_class_point3D/Point2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_point2D_and_class_point3D/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_point2D_and_class_point3D/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_point_and_moveablePoint/MoveablePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_point_and_moveablePoint/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_inheritance/bai_tap/class_point_and_moveablePoint/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,13 +53,13 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShapeTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object_in_java.bai_tap.Fan.Main" />
+  <component name="RunManager" selected="Application.Run">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_inheritance.bai_tap.class_circle_and_class_cylinder.Main" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss4_class_and_object_in_java.bai_tap.Fan.*" />
+          <option name="PATTERN" value="ss6_inheritance.bai_tap.class_circle_and_class_cylinder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,6 +73,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.bai_tap.Circle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_inheritance.bai_tap.class_point_and_moveablePoint.Run" />
+      <module name="module2_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss6_inheritance.bai_tap.class_point_and_moveablePoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_inheritance.bai_tap.class_point2D_and_class_point3D.Test" />
+      <module name="module2_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss6_inheritance.bai_tap.class_point2D_and_class_point3D.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,39 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method.TestStaticMethod" />
-      <module name="module2_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStaticProperty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier_static_method_static_property.thuc_hanh.static_property.TestStaticProperty" />
-      <module name="module2_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.thuc_hanh.static_property.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Run" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.ShapeTest" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestStaticMethod" />
-        <item itemvalue="Application.TestStaticProperty" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +159,7 @@
       <workItem from="1649062833598" duration="13324000" />
       <workItem from="1649121288947" duration="32228000" />
       <workItem from="1649295142163" duration="4586000" />
-      <workItem from="1649386163214" duration="4561000" />
+      <workItem from="1649386163214" duration="15949000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -255,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649312952992</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="8/4">
+      <created>1649392010687</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649392010687</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +290,8 @@
     <MESSAGE value="5/4" />
     <MESSAGE value="6/4" />
     <MESSAGE value="7/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/4" />
+    <MESSAGE value="8/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="8/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
