@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="12/4">
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_and_refactoring/thuc_hanh/doi_ten_bien_va_tach_hang/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_and_refactoring/thuc_hanh/tach_bien/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_and_refactoring/thuc_hanh/tach_phuong_thuc/Cylinder.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="13/4">
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_and_refactoring/bai_tap/Refactoring/TennisGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/interface_colorable/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/interface_colorable/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Cylinder">
+  <component name="RunManager" selected="Application.TennisGame">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss8_clean_code_and_refactoring.thuc_hanh.doi_ten_bien_va_tach_hang.Calculator" />
       <module name="module2_project" />
@@ -100,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.interface_resizeable.Run" />
+    <configuration name="TennisGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss8_clean_code_and_refactoring.bai_tap.Refactoring.TennisGame" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.interface_resizeable.*" />
+          <option name="PATTERN" value="ss8_clean_code_and_refactoring.bai_tap.Refactoring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TennisGame" />
         <item itemvalue="Application.Cylinder" />
         <item itemvalue="Application.FizzBuzz" />
         <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Run (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +165,7 @@
       <workItem from="1649295142163" duration="4586000" />
       <workItem from="1649386163214" duration="16428000" />
       <workItem from="1649677297136" duration="832000" />
-      <workItem from="1649696489051" duration="17044000" />
+      <workItem from="1649696489051" duration="21934000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -289,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649782827461</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="13/4">
+      <created>1649822400832</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1649822400832</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +320,8 @@
     <MESSAGE value="8/4" />
     <MESSAGE value="9/4" />
     <MESSAGE value="12/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/4" />
+    <MESSAGE value="13/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="13/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
