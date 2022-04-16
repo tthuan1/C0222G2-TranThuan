@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="13/4">
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_and_refactoring/bai_tap/Refactoring/TennisGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/GenericStackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/MyGenericStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/MyLinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_danh_sach/bai_tap/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_danh_sach/bai_tap/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_danh_sach/thuc_hanh/linked_list_basic/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_danh_sach/thuc_hanh/linked_list_basic/TestMyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_danh_sach/thuc_hanh/list_basic/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_danh_sach/thuc_hanh/list_basic/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +56,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/interface_colorable" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,13 +69,13 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TennisGame">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss8_clean_code_and_refactoring.thuc_hanh.doi_ten_bien_va_tach_hang.Calculator" />
+  <component name="RunManager" selected="Application.MyListTest">
+    <configuration name="GenericStackClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.thuc_hanh.GenericStackClient" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss8_clean_code_and_refactoring.thuc_hanh.doi_ten_bien_va_tach_hang.*" />
+          <option name="PATTERN" value="s11_stack_queue.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Cylinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss8_clean_code_and_refactoring.thuc_hanh.tach_phuong_thuc.Cylinder" />
+    <configuration name="MyGenericStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.thuc_hanh.MyGenericStack" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss8_clean_code_and_refactoring.thuc_hanh.tach_phuong_thuc.*" />
+          <option name="PATTERN" value="s11_stack_queue.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss8_clean_code_and_refactoring.thuc_hanh.tach_bien.FizzBuzz" />
+    <configuration name="MyLinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.thuc_hanh.MyLinkedListQueue" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss8_clean_code_and_refactoring.thuc_hanh.tach_bien.*" />
+          <option name="PATTERN" value="s11_stack_queue.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TennisGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss8_clean_code_and_refactoring.bai_tap.Refactoring.TennisGame" />
+    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss10_danh_sach.bai_tap.MyListTest" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss8_clean_code_and_refactoring.bai_tap.Refactoring.*" />
+          <option name="PATTERN" value="ss10_danh_sach.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.interface_colorable.Test" />
+    <configuration name="MyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.bai_tap.MyStack" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.interface_colorable.*" />
+          <option name="PATTERN" value="s11_stack_queue.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TennisGame" />
-        <item itemvalue="Application.Cylinder" />
-        <item itemvalue="Application.FizzBuzz" />
-        <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.MyListTest" />
+        <item itemvalue="Application.MyStack" />
+        <item itemvalue="Application.GenericStackClient" />
+        <item itemvalue="Application.MyLinkedListQueue" />
+        <item itemvalue="Application.MyGenericStack" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +177,8 @@
       <workItem from="1649295142163" duration="4586000" />
       <workItem from="1649386163214" duration="16428000" />
       <workItem from="1649677297136" duration="832000" />
-      <workItem from="1649696489051" duration="21934000" />
+      <workItem from="1649696489051" duration="47041000" />
+      <workItem from="1650119213890" duration="1083000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -293,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649822400832</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="13/4">
+      <created>1649865548631</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1649865548631</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
