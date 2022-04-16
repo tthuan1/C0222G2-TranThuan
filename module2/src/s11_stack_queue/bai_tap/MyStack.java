@@ -1,14 +1,16 @@
 package s11_stack_queue.bai_tap;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
 public class MyStack {
     public static void main(String[] args) {
+        //Đảo ngược phần tử trong mảng số nguyên sử dụng Stack
         Stack<Integer> myStack=new Stack<>();
         Stack<Integer> myStack1=new Stack<>();
-        Scanner scanner=new Scanner(System.in);
-//
+        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Nhập số phần tử: ");
         int size=Integer.parseInt(scanner.nextLine());
         for (int i = 1; i <= size; i++) {
@@ -16,6 +18,7 @@ public class MyStack {
             int e=Integer.parseInt(scanner.nextLine());
             myStack.push(e);
         }
+
         for (int i = 1; i <= size; i++) {
             myStack1.push(myStack.pop());
         }
@@ -23,33 +26,27 @@ public class MyStack {
         for (int i = 1; i <=size; i++) {
             System.out.println("phần tử thứ "+i+": "+myStack1.search(i));
         }
-//        ------------------------------------------------------------------------------------------------------------------------
-//        Stack<String> mWord=new Stack<>();
-//        Stack<String> wStack=new Stack<>();
-//        System.out.println("Nhập chữ đi: ");
-//        String str=scanner.nextLine();
-////
-//        String[] words = str.split("");
+
+
+//        Đảo ngược chuỗi sử dụng Stack
+        Stack<String> wStack = new Stack<>();
+
+        System.out.println("\nNhập chữ đi: ");
+        String str = scanner.nextLine();
 //
-//
-//        for (int i = 1; i < words.length; i++) {
-//            wStack.push(words[i]);
-//        }
-//        for (String c:wStack) {
-//            System.out.println(wStack.search(c));
-//        }
+        String[] mWord = str.split("");
+        System.out.println(Arrays.toString(mWord));
 
 
-        //su dung vong lap foreach de in cac element cua mang chuoi thu duoc
-//        for (String w : wStack) {
-//            System.out.print(w);
-//        }
-//        for (int i = 1; i <= wStack.size(); i++) {
-//            System.out.println(wStack.search(i));
-//        }
+        for (int i = 0; i < mWord.length; i++) {
+            wStack.push(mWord[i]);
+        }
 
-
-
+        String[] outp = new String[wStack.size()];
+        for (int i = 0; i < mWord.length; i++) {
+            outp[i]=wStack.pop();
+        }
+        System.out.println(Arrays.toString(outp));
 
     }
 }
