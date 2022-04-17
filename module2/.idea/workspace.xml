@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="16/4">
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="17/4">
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/quanLyPhuongTien.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/PhuongTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/XeMay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/XeOto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/XeTai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/IQuanLy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/view/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +183,9 @@
       <workItem from="1649386163214" duration="16428000" />
       <workItem from="1649677297136" duration="832000" />
       <workItem from="1649696489051" duration="47041000" />
-      <workItem from="1650119213890" duration="6541000" />
+      <workItem from="1650119213890" duration="6561000" />
+      <workItem from="1650132887678" duration="1357000" />
+      <workItem from="1650181832093" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -316,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650127337046</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="17/4">
+      <created>1650132868640</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1650132868640</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +370,8 @@
     <MESSAGE value="12/4" />
     <MESSAGE value="13/4" />
     <MESSAGE value="16/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/4" />
+    <MESSAGE value="17/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="17/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
