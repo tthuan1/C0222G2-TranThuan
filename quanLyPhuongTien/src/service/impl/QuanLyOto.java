@@ -68,20 +68,7 @@ public class QuanLyOto implements IQuanLy {
     public void search(String bienKiemSoat) {
         for (int i = 0; i < danhSachOto.size(); i++) {
             if (bienKiemSoat.equals(danhSachOto.get(i).getBienKiemSoat())) {
-                System.out.println("Bạn có muốn xoá không:\ny\tn");
-                String confirm=scanner.nextLine();
-                if (confirm.equals("y")){
-                    danhSachOto.remove(i);
-                    System.out.println("Đã xoá thành công");
-                    break;
-                }else if (confirm.equals("n")){
-                    System.out.println("Không xoá thành công");
-                    MainController.displayMainMenu();
-                }else {
-                    System.out.println("bạn nhập sai rồi");
-                    MainController.displayMainMenu();
-                }
-
+                System.out.println(danhSachOto.get(i));
             }
         }
     }

@@ -6,8 +6,6 @@ public class MainController {
     public static void  displayMainMenu(){
         Scanner scanner=new Scanner(System.in);
         boolean flag=true;
-
-
             do {
                 System.out.printf("CHƯƠNG TRÌNH QUẢN LÝ PHƯƠNG TIỆN GIAO THÔNG\n" +
                         "Chọn chức năng\n" +
@@ -28,7 +26,11 @@ public class MainController {
                         Delete.delete();
                         break;
                     case 4:
+                        Search.search();
+                        break;
                     case 5:
+                        System.out.println("Chương trình đã tắt");
+                        flag=false;
                 }
             }while (flag);
     }

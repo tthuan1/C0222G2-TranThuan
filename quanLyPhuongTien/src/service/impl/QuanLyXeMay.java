@@ -63,21 +63,10 @@ public class QuanLyXeMay implements IQuanLy {
 
     @Override
     public void search(String bienKiemSoat) {
+//        String[] str=bienKiemSoat.split("");
         for (int i = 0; i < danhSachXeMay.size(); i++) {
             if (bienKiemSoat.equals(danhSachXeMay.get(i).getBienKiemSoat())) {
-                System.out.println("Bạn có muốn xoá không:\ny\tn");
-                String confirm=scanner.nextLine();
-                if (confirm.equals("y")){
-                    danhSachXeMay.remove(i);
-                    System.out.println("Đã xoá thành công");
-                    break;
-                }else if (confirm.equals("n")){
-                    System.out.println("Không xoá thành công");
-                    MainController.displayMainMenu();
-                }else {
-                    System.out.println("bạn nhập sai rồi");
-                    MainController.displayMainMenu();
-                }
+                System.out.println(danhSachXeMay.get(i));
             }
         }
     }

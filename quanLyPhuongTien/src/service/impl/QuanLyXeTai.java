@@ -64,6 +64,10 @@ public class QuanLyXeTai implements IQuanLy{
 
     @Override
     public void search(String bienKiemSoat) {
-
+        for (int i = 0; i < danhSachXeTai.size(); i++) {
+            if (bienKiemSoat.equals(danhSachXeTai.get(i).getBienKiemSoat())) {
+                System.out.println(danhSachXeTai.get(i));
+            }
+        }
     }
 }
