@@ -1,6 +1,7 @@
 package service.impl;
 
 
+import controller.MainController;
 import model.XeMay;
 import model.XeOto;
 
@@ -11,8 +12,8 @@ public class QuanLyOto implements IQuanLy {
     Scanner scanner=new Scanner(System.in);
     static ArrayList<XeOto> danhSachOto = new ArrayList<>();
     static {
-        danhSachOto.add(new XeOto("81B1-11111","mada",2020,"thuan",4,"gia đình"));
-        danhSachOto.add(new XeOto("92C1-33333", "met", 2019, "Huyen", 6,"du lịch"));
+        danhSachOto.add(new XeOto("81A1-33333","mada",2020,"thuan",4,"gia đình"));
+        danhSachOto.add(new XeOto("92A1-33333", "met", 2019, "Huyen", 6,"du lịch"));
     }
 
 
@@ -41,15 +42,47 @@ public class QuanLyOto implements IQuanLy {
     }
 
     @Override
-    public void delete(String x) {
+    public void delete(String bienKiemSoat) {
         for (int i = 0; i < danhSachOto.size(); i++) {
-            x.equals(danhSachOto.getClass());
+            if (bienKiemSoat.equals(danhSachOto.get(i).getBienKiemSoat())) {
+                System.out.println("Bạn có muốn xoá không:\ny\tn");
+                String confirm=scanner.nextLine();
+                if (confirm.equals("y")){
+                    danhSachOto.remove(i);
+                    System.out.println("Đã xoá thành công");
+                    break;
+                }else if (confirm.equals("n")){
+                    System.out.println("Không xoá thành công");
+                    MainController.displayMainMenu();
+                }else {
+                    System.out.println("bạn nhập sai rồi");
+                    MainController.displayMainMenu();
+                }
+
+            }
         }
 
     }
 
     @Override
-    public void search() {
+    public void search(String bienKiemSoat) {
+        for (int i = 0; i < danhSachOto.size(); i++) {
+            if (bienKiemSoat.equals(danhSachOto.get(i).getBienKiemSoat())) {
+                System.out.println("Bạn có muốn xoá không:\ny\tn");
+                String confirm=scanner.nextLine();
+                if (confirm.equals("y")){
+                    danhSachOto.remove(i);
+                    System.out.println("Đã xoá thành công");
+                    break;
+                }else if (confirm.equals("n")){
+                    System.out.println("Không xoá thành công");
+                    MainController.displayMainMenu();
+                }else {
+                    System.out.println("bạn nhập sai rồi");
+                    MainController.displayMainMenu();
+                }
 
+            }
+        }
     }
 }

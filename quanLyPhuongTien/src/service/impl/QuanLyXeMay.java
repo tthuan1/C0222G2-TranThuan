@@ -1,5 +1,6 @@
 package service.impl;
 
+import controller.MainController;
 import model.XeMay;
 
 import java.util.ArrayList;
@@ -10,9 +11,9 @@ public class QuanLyXeMay implements IQuanLy {
     Scanner scanner = new Scanner(System.in);
 
     static {
-        danhSachXeMay.add(new XeMay("47B1-00498", "honda", 2015, "Tran Thuan", "50cc"));
-        danhSachXeMay.add(new XeMay("43H1-22222", "SH", 2020, "Nam", "150cc"));
-        danhSachXeMay.add(new XeMay("92C1-33333", "AB", 2019, "Huyen", "125cc"));
+        danhSachXeMay.add(new XeMay("47B1-22222", "honda", 2015, "Tran Thuan", "50cc"));
+        danhSachXeMay.add(new XeMay("43B1-22222", "SH", 2020, "Nam", "150cc"));
+        danhSachXeMay.add(new XeMay("92B1-22222", "AB", 2019, "Huyen", "125cc"));
     }
 
     @Override
@@ -33,26 +34,52 @@ public class QuanLyXeMay implements IQuanLy {
     @Override
     public void display() {
         for (int i = 0; i < danhSachXeMay.size(); i++) {
-            System.out.println(danhSachXeMay.get(i).getBienKiemSoat());
+            System.out.println(danhSachXeMay.get(i));
         }
     }
+
+
 
     @Override
     public void delete(String bienKiemSoat) {
         for (int i = 0; i < danhSachXeMay.size(); i++) {
             if (bienKiemSoat.equals(danhSachXeMay.get(i).getBienKiemSoat())) {
-                danhSachXeMay.remove(i);
-                System.out.println("Đã xoá thành công");
-            }else {
-                System.out.println("không thể xoá!!");
+                System.out.println("Bạn có muốn xoá không:\ny\tn");
+                String confirm=scanner.nextLine();
+                if (confirm.equals("y")){
+                    danhSachXeMay.remove(i);
+                    System.out.println("Đã xoá thành công");
+                    break;
+                }else if (confirm.equals("n")){
+                    System.out.println("Không xoá thành công");
+                    MainController.displayMainMenu();
+                }else {
+                    System.out.println("bạn nhập sai rồi");
+                    MainController.displayMainMenu();
+                }
             }
         }
-
     }
 
     @Override
-    public void search() {
-
+    public void search(String bienKiemSoat) {
+        for (int i = 0; i < danhSachXeMay.size(); i++) {
+            if (bienKiemSoat.equals(danhSachXeMay.get(i).getBienKiemSoat())) {
+                System.out.println("Bạn có muốn xoá không:\ny\tn");
+                String confirm=scanner.nextLine();
+                if (confirm.equals("y")){
+                    danhSachXeMay.remove(i);
+                    System.out.println("Đã xoá thành công");
+                    break;
+                }else if (confirm.equals("n")){
+                    System.out.println("Không xoá thành công");
+                    MainController.displayMainMenu();
+                }else {
+                    System.out.println("bạn nhập sai rồi");
+                    MainController.displayMainMenu();
+                }
+            }
+        }
     }
 
 

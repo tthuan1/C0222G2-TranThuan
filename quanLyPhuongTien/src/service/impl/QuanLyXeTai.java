@@ -1,5 +1,6 @@
 package service.impl;
 
+import controller.MainController;
 import model.XeMay;
 import model.XeOto;
 import model.XeTai;
@@ -41,11 +42,28 @@ public class QuanLyXeTai implements IQuanLy{
 
     @Override
     public void delete(String bienKiemSoat) {
+        for (int i = 0; i < danhSachXeTai.size(); i++) {
+            if (bienKiemSoat.equals(danhSachXeTai.get(i).getBienKiemSoat())) {
+                System.out.println("Bạn có muốn xoá không:\ny\tn");
+                String confirm=scanner.nextLine();
+                if (confirm.equals("y")){
+                    danhSachXeTai.remove(i);
+                    System.out.println("Đã xoá thành công");
+                    break;
+                }else if (confirm.equals("n")){
+                    System.out.println("Không xoá thành công");
+                    MainController.displayMainMenu();
+                }else {
+                    System.out.println("bạn nhập sai rồi");
+                    MainController.displayMainMenu();
+                }
 
+            }
+        }
     }
 
     @Override
-    public void search() {
+    public void search(String bienKiemSoat) {
 
     }
 }
