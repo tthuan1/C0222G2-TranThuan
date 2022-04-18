@@ -3,7 +3,7 @@ package model;
 public abstract class PhuongTien {
     protected String bienKiemSoat;
     protected String tenHangSanXuat;
-    protected int namSanXuat;
+    protected Integer namSanXuat;
     protected String chuSoHuu;
 
     public PhuongTien() {

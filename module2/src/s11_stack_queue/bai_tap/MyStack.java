@@ -46,6 +46,7 @@ public class MyStack {
         for (int i = 0; i < mWord.length; i++) {
             outp[i]=wStack.pop();
         }
+
         System.out.println(Arrays.toString(outp));
 
     }

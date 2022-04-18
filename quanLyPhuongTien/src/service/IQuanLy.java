@@ -1,6 +1,6 @@
-package service.impl;
+package service;
 
-public interface IQuanLy {
+public interface IQuanLy<T> {
     void add();
     void display();
     void delete(String bienKiemSoat);

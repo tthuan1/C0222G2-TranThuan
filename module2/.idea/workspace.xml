@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="17/4">
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/quanLyPhuongTien.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/PhuongTien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/XeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/XeOto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/XeTai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/IQuanLy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/view/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/AgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/Student1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/TestMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/PhuongTien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/PhuongTien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/IQuanLy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IQuanLy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/interface_colorable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -74,39 +70,13 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyStack">
-    <configuration name="GenericStackClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.thuc_hanh.GenericStackClient" />
+  <component name="RunManager" selected="Application.AgeComparator">
+    <configuration name="AgeComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.AgeComparator" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s11_stack_queue.thuc_hanh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyGenericStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.thuc_hanh.MyGenericStack" />
-      <module name="module2_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s11_stack_queue.thuc_hanh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyLinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.thuc_hanh.MyLinkedListQueue" />
-      <module name="module2_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s11_stack_queue.thuc_hanh.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +110,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_inheritance.thuc_hanh.geometric_object.Test" />
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.Student" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_inheritance.thuc_hanh.geometric_object.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.TestMap" />
+      <module name="module2_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AgeComparator" />
+        <item itemvalue="Application.Student" />
         <item itemvalue="Application.MyStack" />
+        <item itemvalue="Application.TestMap" />
         <item itemvalue="Application.MyListTest" />
-        <item itemvalue="Application.GenericStackClient" />
-        <item itemvalue="Application.MyLinkedListQueue" />
-        <item itemvalue="Application.MyGenericStack" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +169,7 @@
       <workItem from="1650119213890" duration="6561000" />
       <workItem from="1650132887678" duration="1357000" />
       <workItem from="1650181832093" duration="39000" />
+      <workItem from="1650253481437" duration="1488000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>

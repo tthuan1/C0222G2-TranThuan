@@ -7,7 +7,7 @@ public class MainController {
         Scanner scanner=new Scanner(System.in);
         boolean flag=true;
             do {
-                System.out.printf("CHƯƠNG TRÌNH QUẢN LÝ PHƯƠNG TIỆN GIAO THÔNG\n" +
+                System.out.print("CHƯƠNG TRÌNH QUẢN LÝ PHƯƠNG TIỆN GIAO THÔNG\n" +
                         "Chọn chức năng\n" +
                         "1. Thêm mới phương tiện\n" +
                         "2. Hiển thị phương tiện\n" +

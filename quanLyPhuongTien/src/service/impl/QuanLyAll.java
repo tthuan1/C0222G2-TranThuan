@@ -1,10 +1,11 @@
 package service.impl;
 
 import model.PhuongTien;
+import service.IQuanLy;
 
 import java.util.ArrayList;
 
-public class QuanLyAll implements IQuanLy{
+public class QuanLyAll implements IQuanLy {
     static ArrayList<PhuongTien> danhSachAll = new ArrayList<>();
 
     @Override
