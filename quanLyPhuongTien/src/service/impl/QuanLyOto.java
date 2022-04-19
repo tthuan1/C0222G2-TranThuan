@@ -4,11 +4,12 @@ package service.impl;
 import controller.MainController;
 import model.XeOto;
 import service.IQuanLy;
+import service.IXeOto;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class QuanLyOto implements IQuanLy {
+public class QuanLyOto implements IXeOto {
     Scanner scanner=new Scanner(System.in);
     static ArrayList<XeOto> danhSachOto = new ArrayList<>();
     static {
@@ -31,7 +32,8 @@ public class QuanLyOto implements IQuanLy {
         int soChoNgoi = Integer.parseInt(scanner.nextLine());
         System.out.print("Nhập kiểu xe: ");
         String kieuXe = scanner.nextLine();
-        danhSachOto.add(new XeOto(bienKiemSoat,tenHangSanXuat,namSanXuat,chuSoHuu,soChoNgoi,kieuXe));
+        XeOto xeOto=new XeOto(bienKiemSoat,tenHangSanXuat,namSanXuat,chuSoHuu,soChoNgoi,kieuXe);
+        danhSachOto.add(xeOto);
     }
 
     @Override

@@ -3,11 +3,12 @@ package service.impl;
 import controller.MainController;
 import model.XeMay;
 import service.IQuanLy;
+import service.IXeMay;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class QuanLyXeMay implements IQuanLy {
+public class QuanLyXeMay implements IXeMay {
     static ArrayList<XeMay> danhSachXeMay = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 

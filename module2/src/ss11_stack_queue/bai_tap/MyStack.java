@@ -1,4 +1,4 @@
-package s11_stack_queue.bai_tap;
+package ss11_stack_queue.bai_tap;
 
 import java.util.Arrays;
 import java.util.Scanner;

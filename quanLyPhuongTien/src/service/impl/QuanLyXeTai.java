@@ -2,12 +2,12 @@ package service.impl;
 
 import controller.MainController;
 import model.XeTai;
-import service.IQuanLy;
+import service.IXeTai;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class QuanLyXeTai implements IQuanLy {
+public class QuanLyXeTai implements IXeTai {
 
     Scanner scanner=new Scanner(System.in);
     static ArrayList<XeTai> danhSachXeTai = new ArrayList<>();

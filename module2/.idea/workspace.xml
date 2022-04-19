@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="17/4">
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/AgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/Student1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/TestMap.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="18/4">
+      <change afterPath="$PROJECT_DIR$/src/ss11_stack_queue/bai_tap/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IXeMay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IXeOto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IXeTai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/PhuongTien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/model/PhuongTien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/IQuanLy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IQuanLy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/bai_tap/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/GenericStackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/GenericStackClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/MyGenericStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/MyLinkedListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +39,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,7 +82,7 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AgeComparator">
+  <component name="RunManager" selected="Application.View">
     <configuration name="AgeComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.AgeComparator" />
       <module name="module2_project" />
@@ -84,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss10_danh_sach.bai_tap.MyListTest" />
+    <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss11_stack_queue.bai_tap.Map" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss10_danh_sach.bai_tap.*" />
+          <option name="PATTERN" value="ss11_stack_queue.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,11 +110,11 @@
       </method>
     </configuration>
     <configuration name="MyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.bai_tap.MyStack" />
+      <option name="MAIN_CLASS_NAME" value="ss11_stack_queue.bai_tap.MyStack" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s11_stack_queue.bai_tap.*" />
+          <option name="PATTERN" value="ss11_stack_queue.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.TestMap" />
+    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList.View" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.View" />
+        <item itemvalue="Application.Map" />
         <item itemvalue="Application.AgeComparator" />
         <item itemvalue="Application.Student" />
         <item itemvalue="Application.MyStack" />
-        <item itemvalue="Application.TestMap" />
-        <item itemvalue="Application.MyListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +181,7 @@
       <workItem from="1650119213890" duration="6561000" />
       <workItem from="1650132887678" duration="1357000" />
       <workItem from="1650181832093" duration="39000" />
-      <workItem from="1650253481437" duration="1488000" />
+      <workItem from="1650253481437" duration="15025000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -325,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650132868640</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="18/4">
+      <created>1650255060518</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1650255060518</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +374,8 @@
     <MESSAGE value="13/4" />
     <MESSAGE value="16/4" />
     <MESSAGE value="17/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="17/4" />
+    <MESSAGE value="18/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="18/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

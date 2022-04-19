@@ -1,4 +1,4 @@
-package s11_stack_queue.thuc_hanh;
+package ss11_stack_queue.thuc_hanh;
 
 public class MyLinkedListQueue {
     private Node head;
