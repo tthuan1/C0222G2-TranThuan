@@ -1,6 +1,7 @@
 package ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ProductManager {
@@ -20,8 +21,8 @@ public class ProductManager {
         String name=scanner.nextLine();
         System.out.print("Nhập giá tiền: ");
         int price=Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < product.size(); i++) {
-            if (id==product.get(i).getId()){
+        for (Product value : product) {
+            if (id == value.getId()) {
 
             }
         }
@@ -29,8 +30,8 @@ public class ProductManager {
     }
 
     public void display(){
-        for (int i = 0; i < product.size(); i++) {
-            System.out.println(product.get(i));
+        for (Product value : product) {
+            System.out.println(value);
         }
     }
 
@@ -45,24 +46,24 @@ public class ProductManager {
 
     public void search(String name){
         for (int i = 0; i < product.size(); i++) {
-            if (name.equals(product.get(i).getName())){
+            if (product.get(i).getName().contains(name)){
                 System.out.print(product.get(i));
             }
         }
     }
     public void update(int idCheck){
         int count=0;
-        for (int i = 0; i < product.size() ; i++) {
-            if (idCheck==product.get(i).getId()){
+        for (Product value : product) {
+            if (idCheck == value.getId()) {
                 System.out.print("Nhập id thay thế: ");
-                int id=Integer.parseInt(scanner.nextLine());
+                int id = Integer.parseInt(scanner.nextLine());
                 System.out.print("Nhập tên sản phẩm thay thế: ");
-                String name=scanner.nextLine();
+                String name = scanner.nextLine();
                 System.out.print("Nhập giá tiền thay thế: ");
-                int price=Integer.parseInt(scanner.nextLine());
-                product.get(i).setId(id);
-                product.get(i).setName(name);
-                product.get(i).setPrice(price);
+                int price = Integer.parseInt(scanner.nextLine());
+                value.setId(id);
+                value.setName(name);
+                value.setPrice(price);
                 count++;
             }
         }
@@ -72,7 +73,16 @@ public class ProductManager {
             System.out.println("không có id này");
         }
     }
+    public void sortUpAscending(){
+        Collections.sort(product);
+        System.out.println("So sanh tăng dần:");
 
+        display();
+    }
+    public void sortDescending(){
+        Collections.sort(product, new DemoComparator());
+        display();
+    }
 
 
 }

@@ -37,10 +37,12 @@ public class View {
                     searchView();
                     break;
                 case 6:
-                    System.out.println("chưa làm");
+                    System.out.println("sắp sếp");
+                    productManager.sortUpAscending();
                     break;
                 case 7:
-                    System.out.println("chưa làm");
+
+                    productManager.sortDescending();
                     break;
                 case 8:
                     flag=false;

@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="18/4">
-      <change afterPath="$PROJECT_DIR$/src/ss11_stack_queue/bai_tap/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IXeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IXeOto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/IXeTai.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="19/4">
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/DemoComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/bai_tap/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/GenericStackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/GenericStackClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/MyGenericStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/MyLinkedListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s11_stack_queue/thuc_hanh/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_stack_queue/thuc_hanh/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/controller/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +168,7 @@
       <workItem from="1650119213890" duration="6561000" />
       <workItem from="1650132887678" duration="1357000" />
       <workItem from="1650181832093" duration="39000" />
-      <workItem from="1650253481437" duration="15025000" />
+      <workItem from="1650253481437" duration="17997000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -344,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650255060518</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="19/4">
+      <created>1650330799201</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1650330799201</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +369,8 @@
     <MESSAGE value="16/4" />
     <MESSAGE value="17/4" />
     <MESSAGE value="18/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="18/4" />
+    <MESSAGE value="19/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
