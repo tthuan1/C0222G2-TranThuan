@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="19/4">
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/DemoComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/IProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/thuc_hanh/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/DemoComparator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -54,6 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -69,7 +75,7 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.View">
+  <component name="RunManager" selected="Application.BinarySearch">
     <configuration name="AgeComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.AgeComparator" />
       <module name="module2_project" />
@@ -83,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss11_stack_queue.bai_tap.Map" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.thuc_hanh.BinarySearch" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss11_stack_queue.bai_tap.*" />
+          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss11_stack_queue.bai_tap.MyStack" />
+    <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss11_stack_queue.bai_tap.Map" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
@@ -137,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.View" />
         <item itemvalue="Application.Map" />
         <item itemvalue="Application.AgeComparator" />
         <item itemvalue="Application.Student" />
-        <item itemvalue="Application.MyStack" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +174,7 @@
       <workItem from="1650119213890" duration="6561000" />
       <workItem from="1650132887678" duration="1357000" />
       <workItem from="1650181832093" duration="39000" />
-      <workItem from="1650253481437" duration="17997000" />
+      <workItem from="1650253481437" duration="22327000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -338,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650330799201</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="19/4">
+      <created>1650333863247</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1650333863247</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

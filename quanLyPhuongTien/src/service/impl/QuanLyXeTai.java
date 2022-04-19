@@ -64,7 +64,7 @@ public class QuanLyXeTai implements IXeTai {
     @Override
     public void search(String bienKiemSoat) {
         for (int i = 0; i < danhSachXeTai.size(); i++) {
-            if (bienKiemSoat.equals(danhSachXeTai.get(i).getBienKiemSoat())) {
+            if (danhSachXeTai.get(i).getBienKiemSoat().contains(bienKiemSoat)) {
                 System.out.println(danhSachXeTai.get(i));
             }
         }

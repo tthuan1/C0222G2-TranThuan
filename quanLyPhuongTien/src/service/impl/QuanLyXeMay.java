@@ -67,7 +67,7 @@ public class QuanLyXeMay implements IXeMay {
     public void search(String bienKiemSoat) {
 //        String[] str=bienKiemSoat.split("");
         for (int i = 0; i < danhSachXeMay.size(); i++) {
-            if (bienKiemSoat.equals(danhSachXeMay.get(i).getBienKiemSoat())) {
+            if (danhSachXeMay.get(i).getBienKiemSoat().contains(bienKiemSoat)) {
                 System.out.println(danhSachXeMay.get(i));
             }
         }

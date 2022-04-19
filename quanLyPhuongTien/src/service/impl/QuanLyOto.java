@@ -69,7 +69,7 @@ public class QuanLyOto implements IXeOto {
     @Override
     public void search(String bienKiemSoat) {
         for (int i = 0; i < danhSachOto.size(); i++) {
-            if (bienKiemSoat.equals(danhSachOto.get(i).getBienKiemSoat())) {
+            if (danhSachOto.get(i).getBienKiemSoat().contains(bienKiemSoat)) {
                 System.out.println(danhSachOto.get(i));
             }
         }
