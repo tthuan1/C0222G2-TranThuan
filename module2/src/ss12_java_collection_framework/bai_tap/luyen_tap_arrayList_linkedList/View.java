@@ -9,7 +9,7 @@ public class View {
     public static void main(String[] args) {
         boolean flag = true;
         do {
-            System.out.print("\n1. Thêm sản phẩm\n" +
+            System.out.print("\n1. Thêm sản hẩm hihi\n" +
                     "2. Sửa thông tin sản phẩm theo id\n" +
                     "3. Xoá sản phẩm theo id\n" +
                     "4. Hiển thị danh sách sản phẩm\n" +
@@ -49,7 +49,6 @@ public class View {
                     System.out.println("Chương trình đã thoát");
                     break;
                 default:
-
             }
         } while (flag);
 

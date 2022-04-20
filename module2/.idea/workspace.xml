@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="19/4">
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/IProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/thuc_hanh/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/bai_tap/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/BubbleSortByStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/DemoComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/IProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/service/IProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/ProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/luyen_tap_arrayList_linkedList/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyOto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeMay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quanLyPhuongTien/src/service/impl/QuanLyXeTai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,15 +52,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RebelAgentSelection">
+    <selection>jxr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,13 +72,13 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BinarySearch">
-    <configuration name="AgeComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.AgeComparator" />
+  <component name="RunManager" selected="Application.SelectionSort">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.thuc_hanh.BinarySearch" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.*" />
+          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.thuc_hanh.BinarySearch" />
+    <configuration name="BubbleSortByStep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss14_thuat_toan_sap_xep.thuc_hanh.BubbleSortByStep" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.thuc_hanh.*" />
+          <option name="PATTERN" value="ss14_thuat_toan_sap_xep.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.Student" />
+    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss10_danh_sach.bai_tap.MyListTest" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.*" />
+          <option name="PATTERN" value="ss10_danh_sach.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList.View" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss14_thuat_toan_sap_xep.thuc_hanh.SelectionSort" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList.*" />
+          <option name="PATTERN" value="ss14_thuat_toan_sap_xep.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.BubbleSortByStep" />
+        <item itemvalue="Application.MyListTest" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.View" />
         <item itemvalue="Application.Map" />
-        <item itemvalue="Application.AgeComparator" />
-        <item itemvalue="Application.Student" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +171,30 @@
       <workItem from="1650119213890" duration="6561000" />
       <workItem from="1650132887678" duration="1357000" />
       <workItem from="1650181832093" duration="39000" />
-      <workItem from="1650253481437" duration="22327000" />
+      <workItem from="1650253481437" duration="24056000" />
+      <workItem from="1650358959882" duration="352000" />
+      <workItem from="1650359359772" duration="921000" />
+      <workItem from="1650360358475" duration="433000" />
+      <workItem from="1650360849999" duration="361000" />
+      <workItem from="1650361280151" duration="858000" />
+      <workItem from="1650362395746" duration="688000" />
+      <workItem from="1650363125415" duration="391000" />
+      <workItem from="1650375983758" duration="1587000" />
+      <workItem from="1650382949004" duration="323000" />
+      <workItem from="1650383327663" duration="76000" />
+      <workItem from="1650383471352" duration="631000" />
+      <workItem from="1650384191785" duration="600000" />
+      <workItem from="1650384818347" duration="170000" />
+      <workItem from="1650385243295" duration="1351000" />
+      <workItem from="1650386828843" duration="38000" />
+      <workItem from="1650387256298" duration="512000" />
+      <workItem from="1650387816253" duration="179000" />
+      <workItem from="1650388038660" duration="480000" />
+      <workItem from="1650388602543" duration="444000" />
+      <workItem from="1650389095132" duration="1358000" />
+      <workItem from="1650390522912" duration="389000" />
+      <workItem from="1650390954130" duration="1533000" />
+      <workItem from="1650419152499" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -351,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650333863247</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="19/4">
+      <created>1650339042527</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1650339042527</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,5 +421,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

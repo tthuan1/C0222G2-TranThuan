@@ -1,4 +1,4 @@
-package ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList;
+package ss12_java_collection_framework.bai_tap.luyen_tap_arrayList_linkedList.service;
 
 public interface IProduct {
     void add();
