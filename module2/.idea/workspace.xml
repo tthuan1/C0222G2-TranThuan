@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="19/4">
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/FuramaResort.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/controllers/FuramaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Facility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Villa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/ContactService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/FacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/BookingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/ContactServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/FacilityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/bai_tap/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="20/4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,6 +191,7 @@
       <workItem from="1650423854063" duration="2236000" />
       <workItem from="1650464715721" duration="790000" />
       <workItem from="1650471886709" duration="1855000" />
+      <workItem from="1650473781975" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -406,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650339042527</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="20/4">
+      <created>1650473885452</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1650473885454</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +414,8 @@
     <MESSAGE value="17/4" />
     <MESSAGE value="18/4" />
     <MESSAGE value="19/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="19/4" />
+    <MESSAGE value="20/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="20/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
