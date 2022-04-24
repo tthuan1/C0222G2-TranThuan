@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="20/4">
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FuramaResort/src/view/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/bai_tap/SapXepChen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/TriangleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/CalculationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/DebugJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_text_file/thuc_hanh/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_text_file/thuc_hanh/ReadFileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Studen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/controllers/FuramaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/model/coSoVatChat/Villa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/model/employee/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/impl/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/FacilityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/test.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="24/4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +68,7 @@
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SapXepChen">
+  <component name="RunManager" selected="Application.ss15_xu_li_ngoai_le.bai_tap.IllegalTriangle">
     <configuration name="ReadAndWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss16_text_file.thuc_hanh.ReadAndWriteFile" />
       <module name="module2_project" />
@@ -164,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ss15_xu_li_ngoai_le.bai_tap.IllegalTriangle" />
         <item itemvalue="Application.SapXepChen" />
         <item itemvalue="Application.ReadAndWriteFile" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.ReadFileExample" />
-        <item itemvalue="Application.ss15_xu_li_ngoai_le.bai_tap.IllegalTriangle" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +200,7 @@
       <workItem from="1650593242435" duration="6234000" />
       <workItem from="1650609036878" duration="116000" />
       <workItem from="1650621128849" duration="127000" />
-      <workItem from="1650803198926" duration="984000" />
+      <workItem from="1650803198926" duration="1725000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -426,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650474191270</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="24/4">
+      <created>1650804333630</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1650804333630</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +438,8 @@
     <MESSAGE value="18/4" />
     <MESSAGE value="19/4" />
     <MESSAGE value="20/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="20/4" />
+    <MESSAGE value="24/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="24/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
