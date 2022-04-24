@@ -25,7 +25,7 @@ public class Room extends Facility{
 
     @Override
     public String toString() {
-        return "Room- " +
+        return "Room- " +super.toString()+
                 "Dịch vụ miễn phí đi kèm: '" + dichVuMienPhi;
     }
 }

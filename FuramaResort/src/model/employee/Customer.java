@@ -1,6 +1,5 @@
 package model.employee;
 
-import java.util.Date;
 
 public class Customer extends Person{
 //Mã khách hàng,   Loại khách, Địa chỉ
@@ -17,7 +16,7 @@ public class Customer extends Person{
         this.diaChi = diaChi;
     }
 
-    public Customer(String name, Date ngaySinh, String gioiTinh, String cmnd, String sdt, String email, String maKhachHang, String loaiKhach, String diaChi) {
+    public Customer(String name, String ngaySinh, String gioiTinh, String cmnd, String sdt, String email, String maKhachHang, String loaiKhach, String diaChi) {
         super(name, ngaySinh, gioiTinh, cmnd, sdt, email);
         this.maKhachHang = maKhachHang;
         this.loaiKhach = loaiKhach;
@@ -50,9 +49,9 @@ public class Customer extends Person{
 
     @Override
     public String toString() {
-        return "Customer- " +
-                "Mã khách hàng: " + maKhachHang +
+        return "Customer- " +super.toString()+
+                " mã khách hàng: " + maKhachHang +
                 ", loại khách: " + loaiKhach +
-                ", địa chỉ='" + diaChi;
+                ", địa chỉ: " + diaChi;
     }
 }

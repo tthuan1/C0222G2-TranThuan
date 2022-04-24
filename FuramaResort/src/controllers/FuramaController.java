@@ -1,5 +1,9 @@
 package controllers;
 
+import services.CustomerService;
+import services.impl.CustomerServiceImpl;
+import services.impl.EmployeeServiceImpl;
+
 import java.util.Scanner;
 
 public class FuramaController {
@@ -9,7 +13,7 @@ public class FuramaController {
 
         boolean flag = true;
         do {
-            System.out.println("Ứng dụng quản lý khu nghỉ dưỡng Furama\n" +
+            System.out.println("\nỨng dụng quản lý khu nghỉ dưỡng Furama\n" +
                     "1.\tEmployee Management\n" +
                     "2.\tCustomer Management\n" +
                     "3.\tFacility Management \n" +
@@ -43,20 +47,21 @@ public class FuramaController {
     }
 
     public static void employee() {
-        System.out.println("1\tDisplay list employees\n" +
+        EmployeeServiceImpl employeeService=new EmployeeServiceImpl();
+        System.out.print("1\tDisplay list employees\n" +
                 "2\tAdd new employee\n" +
                 "3\tEdit employee\n" +
                 "4\tReturn main menu\n");
         int choose = Integer.parseInt(scanner.nextLine());
         switch (choose) {
             case 1:
-                System.out.println("Display list employees");
+                employeeService.display();
                 break;
             case 2:
-                System.out.println("add");
+                employeeService.add();
                 break;
             case 3:
-                System.out.println("Edit employee");
+                employeeService.update();
                 break;
             case 4:
                 displayMainMenu();
@@ -67,6 +72,7 @@ public class FuramaController {
     }
 
     public static void customer(){
+        CustomerServiceImpl customerServiceImpl=new CustomerServiceImpl();
         System.out.println("1.\tDisplay list customers\n" +
                 "2.\tAdd new customer\n" +
                 "3.\tEdit customer\n" +
@@ -74,13 +80,13 @@ public class FuramaController {
         int choose=Integer.parseInt(scanner.nextLine());
         switch (choose) {
             case 1:
-                System.out.println("Display list customers");
+                customerServiceImpl.display();
                 break;
             case 2:
-                System.out.println("add customer");
+                customerServiceImpl.add();
                 break;
             case 3:
-                System.out.println("Edit customer");
+                customerServiceImpl.update();
                 break;
             case 4:
                 displayMainMenu();

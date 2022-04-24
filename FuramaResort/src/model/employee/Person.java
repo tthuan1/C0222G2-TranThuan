@@ -1,11 +1,10 @@
 package model.employee;
 
-import java.util.Date;
 
 public abstract class Person {
     //   Họ tên, Ngày sinh, Giới tính, Số CMND, Số Điện Thoại, Email,
     private String name;
-    private Date ngaySinh;
+    private String ngaySinh;
     private String gioiTinh;
     private String cmnd;
     private String sdt;
@@ -14,7 +13,8 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(String name, Date ngaySinh, String gioiTinh, String cmnd, String sdt, String email) {
+    public Person(String name, String
+ ngaySinh, String gioiTinh, String cmnd, String sdt, String email) {
         this.name = name;
         this.ngaySinh = ngaySinh;
         this.gioiTinh = gioiTinh;
@@ -31,11 +31,13 @@ public abstract class Person {
         this.name = name;
     }
 
-    public Date getNgaySinh() {
+    public String
+ getNgaySinh() {
         return ngaySinh;
     }
 
-    public void setNgaySinh(Date ngaySinh) {
+    public void setNgaySinh(String
+ ngaySinh) {
         this.ngaySinh = ngaySinh;
     }
 
@@ -74,7 +76,7 @@ public abstract class Person {
     @Override
     public String toString() {
         return "Person- " +
-                "name: " + name +
+                "  tên: " + name +
                 ", ngày sinh: " + ngaySinh +
                 ", giới tính: " + gioiTinh +
                 ", cmnd: " + cmnd +
