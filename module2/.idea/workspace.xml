@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="24/4">
-      <change afterPath="$PROJECT_DIR$/src/ss16_text_file/bai_tap/CopyFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_text_file/bai_tap/CopyFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_text_file/bai_tap/Country.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_text_file/bai_tap/DocFileCsv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/common/WriteAndRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/cotroller/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/services/IProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/services/ProductImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/view/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/CopyFileLon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/read_and_write_the_list_of_students/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/read_and_write_the_list_of_students/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/services/impl/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/services/impl/FacilityServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss16_text_file/bai_tap/DocFileCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_text_file/bai_tap/DocFileCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss16_text_file/thuc_hanh/ReadAndWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_text_file/thuc_hanh/ReadAndWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss16_text_file/thuc_hanh/ReadFileExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_text_file/thuc_hanh/ReadFileExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/data/data.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,18 +78,21 @@
       <recent name="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/trien_khai_interface_comparator" />
       <recent name="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/trien_khai_interface_comparable" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/read_and_write_the_list_of_students" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ss7_abstract_class_and_interface.bai_tap.interface_resizeable" />
       <recent name="ss5_access_modifier_static_method_static_property.thuc_hanh.static_method" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DocFileCsv">
-    <configuration name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_text_file.bai_tap.CopyFile" />
+  <component name="RunManager" selected="Application.Run">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_serialization.thuc_hanh.read_and_write_the_list_of_students.Main" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss16_text_file.bai_tap.*" />
+          <option name="PATTERN" value="ss17_binary_file_serialization.thuc_hanh.read_and_write_the_list_of_students.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DocFileCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_text_file.bai_tap.DocFileCsv" />
+    <configuration name="ReadAndWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_text_file.thuc_hanh.ReadAndWriteFile" />
       <module name="module2_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss16_text_file.bai_tap.*" />
+          <option name="PATTERN" value="ss16_text_file.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,6 +126,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_serialization.bai_tap.view.Run" />
+      <module name="module2_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_binary_file_serialization.bai_tap.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Test" />
       <module name="module2_project" />
@@ -124,26 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ss15_xu_li_ngoai_le.bai_tap.IllegalTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss15_xu_li_ngoai_le.bai_tap.IllegalTriangle" />
-      <module name="module2_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss15_xu_li_ngoai_le.bai_tap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DocFileCsv" />
-        <item itemvalue="Application.CopyFile" />
-        <item itemvalue="Application.ReadFileExample" />
+        <item itemvalue="Application.Run" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ss15_xu_li_ngoai_le.bai_tap.IllegalTriangle" />
+        <item itemvalue="Application.ReadAndWriteFile" />
+        <item itemvalue="Application.ReadFileExample" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +218,8 @@
       <workItem from="1650593242435" duration="6234000" />
       <workItem from="1650609036878" duration="116000" />
       <workItem from="1650621128849" duration="127000" />
-      <workItem from="1650803198926" duration="4378000" />
+      <workItem from="1650803198926" duration="5055000" />
+      <workItem from="1650849482358" duration="14526000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -415,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650805046094</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="24/4">
+      <created>1650817334770</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1650817334770</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +481,10 @@
           <properties class="java.util.InputMismatchException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.NotSerializableException" package="java.io" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="a !=0" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/DebugJava.java</url>
@@ -469,21 +496,6 @@
           <url>file://$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/DebugJava.java</url>
           <line>15</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ss16_text_file/bai_tap/DocFileCsv.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ss16_text_file/bai_tap/DocFileCsv.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ss16_text_file/bai_tap/DocFileCsv.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

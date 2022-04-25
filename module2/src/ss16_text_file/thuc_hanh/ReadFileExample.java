@@ -36,7 +36,7 @@ public class ReadFileExample {
     }
 
     public static void main(String[] args) {
-        System.out.println("Nhập đường dẫn file /Users/tranthuan/Desktop/TranThuan/C0222G2-TranThuan/module2/src/ss16_text_file/thuc_hanh/test.txt ");
+        System.out.println("Nhập đường dẫn file src/ss16_text_file/thuc_hanh/test.txt ");
         Scanner scanner = new Scanner(System.in);
         String path = scanner.nextLine();
 

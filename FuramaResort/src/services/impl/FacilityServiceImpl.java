@@ -12,12 +12,13 @@ import services.FacilityService;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class FacilityServiceImpl implements FacilityService {
 
     static Scanner scanner = new Scanner(System.in);
-    static LinkedHashMap<Integer, Facility> facilityList = new LinkedHashMap<>();
+    static Map<Integer, Facility> facilityList = new LinkedHashMap<>();
 
     //   tenDichVu, dienTichSuDung, chiPhiThue soLuongNguoiToiDa, kieuThue,  tieuChuanPhong, soTang
     static {

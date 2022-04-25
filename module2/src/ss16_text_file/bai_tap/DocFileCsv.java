@@ -6,7 +6,7 @@ import java.io.FileReader;
 public class DocFileCsv {
     public static void main(String[] args) {
         try {
-            FileReader fileReader = new FileReader("/Users/tranthuan/Desktop/TranThuan/C0222G2-TranThuan/module2/src/ss16_text_file/bai_tap/Country.csv");
+            FileReader fileReader = new FileReader("src/ss16_text_file/bai_tap/Country.csv");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             String line="";

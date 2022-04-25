@@ -46,8 +46,8 @@ public class ReadAndWriteFile {
     }
     public static void main(String[] args) {
         ReadAndWriteFile readAndWriteFile = new ReadAndWriteFile();
-        List<Integer> numbers = readAndWriteFile.readFile("/Users/tranthuan/Desktop/TranThuan/C0222G2-TranThuan/module2/src/ss16_text_file/thuc_hanh/numbers.txt");
+        List<Integer> numbers = readAndWriteFile.readFile("src/ss16_text_file/thuc_hanh/numbers.txt");
         int maxValue = findMax(numbers);
-        readAndWriteFile.writeFile("/Users/tranthuan/Desktop/TranThuan/C0222G2-TranThuan/module2/src/ss16_text_file/thuc_hanh/result.txt", maxValue);
+        readAndWriteFile.writeFile("src/ss16_text_file/thuc_hanh/result.txt", maxValue);
     }
 }

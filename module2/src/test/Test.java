@@ -36,13 +36,13 @@ public class Test {
         list.add(studen3);
 
         try {
-            FileReader fileReader = new FileReader("data.txt");
+            FileReader fileReader = new FileReader("src/test/data.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             String line = "";
             while (line != null) {
-                line = bufferedReader.readLine();
                 System.out.println(line);
+                line = bufferedReader.readLine();
             }
 
         } catch (Exception e) {
