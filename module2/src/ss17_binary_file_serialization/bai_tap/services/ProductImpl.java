@@ -37,7 +37,6 @@ public class ProductImpl implements IProduct {
 
     @Override
     public void display() {
-
         for (Product product : WriteAndRead.readFile()){
             System.out.println(product);
         }
