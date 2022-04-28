@@ -1,6 +1,6 @@
 package model.coSoVatChat;
 
-public class Room extends Facility{
+public class Room extends Facility {
     private String dichVuMienPhi;
 
     public Room() {
@@ -10,8 +10,8 @@ public class Room extends Facility{
         this.dichVuMienPhi = dichVuMienPhi;
     }
 
-    public Room(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String dichVuMienPhi) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
+    public Room(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String dichVuMienPhi) {
+        super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.dichVuMienPhi = dichVuMienPhi;
     }
 
@@ -25,7 +25,13 @@ public class Room extends Facility{
 
     @Override
     public String toString() {
-        return "Room- " +super.toString()+
-                "Dịch vụ miễn phí đi kèm: '" + dichVuMienPhi;
+        return "Room: " +
+                ", mã dịch vụ: " + getMaDichVu() +
+                ", tên dịch vụ: " + getTenDichVu() +
+                ", diện tích sử dụng: " + getDienTichSuDung() +
+                ", chi phí thuê: " + getChiPhiThue() +
+                ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
+                ", kiểu thuê: " + getKieuThue() +
+                ", dịch vụ miễn phí đi kèm: '" + dichVuMienPhi;
     }
 }

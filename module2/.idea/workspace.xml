@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="24/4">
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/ClassName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/ValidatePhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/list_bai_hat/CrawlSongExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_account/AccountExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_account/AccountExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_email/EmailExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_email/EmailExampleTest.java" afterDir="false" />
+    <list default="true" id="35e182c8-6e1f-4d95-a9fb-e5afa884806c" name="Changes" comment="26/4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/data/data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/data/data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/services/ProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/bai_tap/services/ProductImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +205,7 @@
       <workItem from="1650803198926" duration="5055000" />
       <workItem from="1650849482358" duration="16822000" />
       <workItem from="1650937037320" duration="4422000" />
-      <workItem from="1650965508571" duration="1900000" />
+      <workItem from="1650965508571" duration="2625000" />
     </task>
     <task id="LOCAL-00001" summary="1/4">
       <created>1648807356696</created>
@@ -440,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650879130707</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="26/4">
+      <created>1650967450196</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1650967450196</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +472,8 @@
     <MESSAGE value="19/4" />
     <MESSAGE value="20/4" />
     <MESSAGE value="24/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="24/4" />
+    <MESSAGE value="26/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="26/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -15,8 +15,8 @@ public class Villa extends House{
         this.dienTichHoBoi = dienTichHoBoi;
     }
 
-    public Villa(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang, Integer dienTichHoBoi) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang);
+    public Villa(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang, Integer dienTichHoBoi) {
+        super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang);
         this.dienTichHoBoi = dienTichHoBoi;
     }
 
@@ -30,7 +30,15 @@ public class Villa extends House{
 
     @Override
     public String toString() {
-        return "Villa- " +super.toString()+
-                "Diện tích hồ bơi: " + dienTichHoBoi ;
+        return "Villa " +
+                ", mã dịch vụ: " + getMaDichVu()+
+                ", tên dịch vụ: " + getTenDichVu() +
+                ", diện tích sử dụng: " + getDienTichSuDung() +
+                ", chi phí thuê: " + getChiPhiThue() +
+                ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
+                ", kiểu thuê: " + getKieuThue()+
+                ", tiêu chuẩn phòng: " + getTieuChuanPhong() +
+                ", số tầng: " + getSoTang()+
+                ", diện tích hồ bơi: " + dienTichHoBoi ;
     }
 }

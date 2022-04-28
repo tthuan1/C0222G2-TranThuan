@@ -1,7 +1,7 @@
 package model.coSoVatChat;
 
-public class House extends Facility{
-    private String  tieuChuanPhong;
+public class House extends Facility {
+    private String tieuChuanPhong;
     private Integer soTang;
 
     public House() {
@@ -12,8 +12,8 @@ public class House extends Facility{
         this.soTang = soTang;
     }
 
-    public House(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
+    public House(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang) {
+        super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.soTang = soTang;
     }
@@ -36,8 +36,14 @@ public class House extends Facility{
 
     @Override
     public String toString() {
-        return "House- " +super.toString()+
-                "Tiêu chuẩn phòng: " + tieuChuanPhong +
+        return "House: " +
+                ", mã dịch vụ: " + getMaDichVu() +
+                ", tên dịch vụ: " + getTenDichVu() +
+                ", diện tích sử dụng: " + getDienTichSuDung() +
+                ", chi phí thuê: " + getChiPhiThue() +
+                ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
+                ", kiểu thuê: " + getKieuThue() +
+                ", tiêu chuẩn phòng: " + tieuChuanPhong +
                 ", số tầng: " + soTang;
     }
 }

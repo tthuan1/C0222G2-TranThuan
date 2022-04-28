@@ -1,8 +1,9 @@
 package model.coSoVatChat;
 
 public abstract class Facility {
+    private String maDichVu;
     private String tenDichVu;
-    private String dienTichSuDung;
+    private Double dienTichSuDung;
     private Double chiPhiThue;
     private Integer soLuongNguoiToiDa;
     private String KieuThue;
@@ -10,7 +11,8 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
+    public Facility(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
+        this.maDichVu = maDichVu;
         this.tenDichVu = tenDichVu;
         this.dienTichSuDung = dienTichSuDung;
         this.chiPhiThue = chiPhiThue;
@@ -26,11 +28,11 @@ public abstract class Facility {
         this.tenDichVu = tenDichVu;
     }
 
-    public String getDienTichSuDung() {
+    public Double getDienTichSuDung() {
         return dienTichSuDung;
     }
 
-    public void setDienTichSuDung(String dienTichSuDung) {
+    public void setDienTichSuDung(Double dienTichSuDung) {
         this.dienTichSuDung = dienTichSuDung;
     }
 
@@ -58,13 +60,22 @@ public abstract class Facility {
         KieuThue = kieuThue;
     }
 
+    public String getMaDichVu() {
+        return maDichVu;
+    }
+
+    public void setMaDichVu(String maDichVu) {
+        this.maDichVu = maDichVu;
+    }
+
     @Override
     public String toString() {
-        return "Facility- " +
-                "Tên dịch vụ: " + tenDichVu +
+        return "Facility: " +
+                ", mã dịch vụ: " + maDichVu +
+                ", tên dịch vụ: " + tenDichVu +
                 ", diện tích sử dụng: " + dienTichSuDung +
                 ", chi phí thuê: " + chiPhiThue +
                 ", số lượng người tối đa: " + soLuongNguoiToiDa +
-                ", kiểu thuê: " + KieuThue ;
+                ", kiểu thuê: " + KieuThue;
     }
 }

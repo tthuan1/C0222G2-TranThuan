@@ -1,8 +1,10 @@
 package controllers;
 
+import model.coSoVatChat.Facility;
 import services.CustomerService;
 import services.impl.CustomerServiceImpl;
 import services.impl.EmployeeServiceImpl;
+import services.impl.FacilityServiceImpl;
 
 import java.util.Scanner;
 
@@ -47,21 +49,21 @@ public class FuramaController {
     }
 
     public static void employee() {
-        EmployeeServiceImpl employeeService=new EmployeeServiceImpl();
+        EmployeeServiceImpl employeeServiceImpl=new EmployeeServiceImpl();
         System.out.print("1\tDisplay list employees\n" +
                 "2\tAdd new employee\n" +
                 "3\tEdit employee\n" +
                 "4\tReturn main menu\n");
-        int choose = Integer.parseInt(scanner.nextLine());
-        switch (choose) {
+        int chooseEmployee = Integer.parseInt(scanner.nextLine());
+        switch (chooseEmployee) {
             case 1:
-                employeeService.display();
+                employeeServiceImpl.display();
                 break;
             case 2:
-                employeeService.add();
+                employeeServiceImpl.add();
                 break;
             case 3:
-                employeeService.update();
+                employeeServiceImpl.update();
                 break;
             case 4:
                 displayMainMenu();
@@ -77,8 +79,8 @@ public class FuramaController {
                 "2.\tAdd new customer\n" +
                 "3.\tEdit customer\n" +
                 "4.\tReturn main menu\n");
-        int choose=Integer.parseInt(scanner.nextLine());
-        switch (choose) {
+        int chooseCustomer=Integer.parseInt(scanner.nextLine());
+        switch (chooseCustomer) {
             case 1:
                 customerServiceImpl.display();
                 break;
@@ -97,23 +99,24 @@ public class FuramaController {
     }
 
     public static void facility(){
+        FacilityServiceImpl facilityService=new FacilityServiceImpl();
         System.out.println("1\tDisplay list facility\n" +
                 "2\tAdd new facility\n" +
                 "3\tDisplay list facility maintenance\n" +
                 "4\tReturn main menu\n");
-        int choose=Integer.parseInt(scanner.nextLine());
-        switch (choose) {
+        int chooseFacility=Integer.parseInt(scanner.nextLine());
+        switch (chooseFacility) {
             case 1:
-                System.out.println("Display list facility");
+                facilityService.display();
                 break;
             case 2:
-                System.out.println("add facility");
+                facilityAdd();
                 break;
             case 3:
-                System.out.println("Display list facility maintenanc");
+                facilityService.displayFacilityMaintenance();
                 break;
             case 4:
-                displayMainMenu();;
+                displayMainMenu();
                 break;
             default:
                 break;
@@ -164,6 +167,32 @@ public class FuramaController {
                 break;
             case 3:
                 displayMainMenu();
+                break;
+            default:
+                break;
+        }
+    }
+
+    public static void facilityAdd (){
+        FacilityServiceImpl facilityService=new FacilityServiceImpl();
+        System.out.print(
+                "1. Add New Villa\n" +
+                "2. Add New House\n" +
+                "3. Add New Room\n" +
+                "4. Back to menu\n" + "Nhập: ");
+        int choose=Integer.parseInt(scanner.nextLine());
+        switch (choose) {
+            case 1:
+                facilityService.addVilla();
+                break;
+            case 2:
+                facilityService.addHouse();
+                break;
+            case 3:
+                facilityService.addRoom();
+                break;
+            case 4:
+                facility();
                 break;
             default:
                 break;
