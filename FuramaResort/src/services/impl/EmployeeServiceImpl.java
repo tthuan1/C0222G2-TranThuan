@@ -1,16 +1,15 @@
 package services.impl;
 
+import common.ReadAndWrite;
 import controllers.FuramaController;
 import model.employee.Employee;
-import model.employee.Person;
 import services.EmployeeService;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements EmployeeService {
+    static private final ReadAndWrite readAndWrite=new ReadAndWrite();
     static Scanner scanner = new Scanner(System.in);
     static ArrayList<Employee> listEmployee = new ArrayList<>();
 
@@ -27,6 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         listEmployee.add(new Employee("phương", "16-07-1999",
                 "nam", "7831290739", "0981786267", "tdphuong@gmail.com",
                 "001", "Đại học", "Giám đốc", 10000000));
+        readAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
     }
 
     @Override
@@ -53,14 +53,15 @@ public class EmployeeServiceImpl implements EmployeeService {
         int luong = Integer.parseInt(scanner.nextLine());
         Employee employee = new Employee(name, date, gioiTinh, cmnd, sdt, email, maNhanVien, trinhDo, viTri, luong);
         listEmployee.add(employee);
-
+        readAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
     }
 
     @Override
     public void display() {
-        for (Employee employee : listEmployee) {
-            System.out.println(employee);
-        }
+//        for (Employee employee : listEmployee) {
+//            System.out.println(employee);
+//        }
+        readAndWrite.readFile(listEmployee,"src/data/employee.csv");
     }
 
     @Override
@@ -93,6 +94,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 int luong = Integer.parseInt(scanner.nextLine());
                 Employee employee = new Employee(name, date, gioiTinh, cmnd, sdt, email, maNhanVien, trinhDo, viTri, luong);
                 listEmployee.set(i, employee);
+                readAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
             }
         }
         if (count == 0) {

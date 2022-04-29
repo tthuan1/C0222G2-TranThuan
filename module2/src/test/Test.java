@@ -34,7 +34,6 @@ public class Test {
         list.add(studen1);
         list.add(studen2);
         list.add(studen3);
-
         try {
             FileReader fileReader = new FileReader("src/test/data.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);

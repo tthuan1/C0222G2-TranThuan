@@ -73,44 +73,35 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.print("Nhập mã dịch vụ: ");
         String maDichVu = scanner.nextLine();
 //        regex.regexMaDichVuVilla(maDichVu);
-
         System.out.print("Nhập tên dịch vụ: ");
         String tenDichVu = scanner.nextLine();
 //        regex.regexTen(tenDichVu);
-
         System.out.print("Nhập diện tích sử dụng: ");
         String dienTichSuDung1 = scanner.nextLine();
 //        regex.regexDienTichSuDung(dienTichSuDung1);
         double dienTichSuDung = Double.parseDouble(dienTichSuDung1);
-
         System.out.print("Nhập chi phí thuê: ");
         String chiPhiThue1 = scanner.nextLine();
 //        regex.regexChiPhiThue(chiPhiThue1);
         double chiPhiThue = Double.parseDouble(chiPhiThue1);
-
         System.out.print("Nhập số lượng người: ");
         String soLuongNguoiToiDa1 = scanner.nextLine();
 //        regex.regexSoLuongNguoi(soLuongNguoiToiDa1);
         int soLuongNguoiToiDa = Integer.parseInt(soLuongNguoiToiDa1);
-
         System.out.print("Nhập kiểu thuê: ");
         String kieuThue = scanner.nextLine();
 //        regex.regexTen(kieuThue);
-
         System.out.print("Nhập tiêu chuẩn phòng: ");
         String tieuChuanPhong = scanner.nextLine();
 //        regex.regexTen(tieuChuanPhong);
-
         System.out.print("Nhập số tầng: ");
         String soTang1 = scanner.nextLine();
 //        regex.regexSoTang(soTang1);
         int soTang = Integer.parseInt(soTang1);
-
         System.out.print("Nhập diện tích hồ bơi: ");
         String dienTichHoBoi1 = scanner.nextLine();
 //        regex.regexDienTichSuDung(dienTichHoBoi1);
         int dienTichHoBoi = Integer.parseInt(dienTichHoBoi1);
-
         facilityList.put(new Villa(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang, dienTichHoBoi), 1);
     }
 
@@ -119,39 +110,31 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.print("Nhập mã dịch vụ: ");
         String maDichVu = scanner.nextLine();
 //        regex.regexMaDichVuHouse(maDichVu);
-
         System.out.print("Nhập tên dịch vụ: ");
         String tenDichVu = scanner.nextLine();
 //        regex.regexTen(tenDichVu);
-
         System.out.print("Nhập diện tích sử dụng: ");
         String dienTichSuDung1 = scanner.nextLine();
 //        regex.regexDienTichSuDung(dienTichSuDung1);
         double dienTichSuDung = Double.parseDouble(dienTichSuDung1);
-
         System.out.print("Nhập chi phí thuê: ");
         String chiPhiThue1 = scanner.nextLine();
 //        regex.regexChiPhiThue(chiPhiThue1);
         double chiPhiThue = Double.parseDouble(chiPhiThue1);
-
         System.out.print("Nhập số lượng người: ");
         String soLuongNguoiToiDa1 = scanner.nextLine();
 //        regex.regexSoLuongNguoi(soLuongNguoiToiDa1);
         int soLuongNguoiToiDa = Integer.parseInt(soLuongNguoiToiDa1);
-
         System.out.print("Nhập kiểu thuê: ");
         String kieuThue = scanner.nextLine();
 //        regex.regexTen(kieuThue);
-
         System.out.print("Nhập tiêu chuẩn phòng: ");
         String tieuChuanPhong = scanner.nextLine();
 //        regex.regexTen(tieuChuanPhong);
-
         System.out.print("Nhập số tầng: ");
         String soTang1 = scanner.nextLine();
 //        regex.regexSoTang(soTang1);
         int soTang = Integer.parseInt(soTang1);
-
         facilityList.put(new House(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang), 0);
     }
 
@@ -160,33 +143,26 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.print("Nhập mã dịch vụ: ");
         String maDichVu = scanner.nextLine();
 //        regex.regexMaDichVuRoom(maDichVu);
-
         System.out.print("Nhập tên dịch vụ: ");
         String tenDichVu = scanner.nextLine();
 //        regex.regexTen(tenDichVu);
-
         System.out.print("Nhập diện tích sử  dụng: ");
         String dienTichSuDung1 = scanner.nextLine();
 //        regex.regexDienTichSuDung(dienTichSuDung1);
         double dienTichSuDung = Double.parseDouble(dienTichSuDung1);
-
         System.out.print("Nhập chi phí thuê: ");
         String chiPhiThue1 = scanner.nextLine();
 //        regex.regexChiPhiThue(chiPhiThue1);
         double chiPhiThue = Double.parseDouble(chiPhiThue1);
-
         System.out.print("Nhập số lượng người: ");
         String soLuongNguoiToiDa1 = scanner.nextLine();
 //        regex.regexSoLuongNguoi(soLuongNguoiToiDa1);
         int soLuongNguoiToiDa = Integer.parseInt(soLuongNguoiToiDa1);
-
         System.out.print("Nhập kiểu thuê: ");
         String kieuThue = scanner.nextLine();
 //        regex.regexTen(kieuThue);
-
         System.out.print("Nhập dịch vụ miễn phí: ");
         String dichVuMienPhi = scanner.nextLine();
-
         facilityList.put(new Room(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, dichVuMienPhi), 0);
     }
 
