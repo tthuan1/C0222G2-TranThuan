@@ -11,7 +11,6 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class CustomerServiceImpl implements CustomerService  {
-    static private ReadAndWrite readAndWrite=new ReadAndWrite();
     static Scanner scanner = new Scanner(System.in);
     static LinkedList<Customer> listCustomer = new LinkedList<>();
 
@@ -31,7 +30,7 @@ public class CustomerServiceImpl implements CustomerService  {
         listCustomer.add(new Customer("Tân","05-07-1999","Nam",
                 "53647289","6381279412","pttan.@gmail.com",
                 "005","Member","Đà Nẵng"));
-        readAndWrite.writeFile(listCustomer,"src/data/customer.csv",false);
+        ReadAndWrite.writeFile(listCustomer,"src/data/customer.csv",false);
     }
 
 //    String name, String ngaySinh, String gioiTinh, String cmnd, String sdt,
@@ -58,7 +57,7 @@ public class CustomerServiceImpl implements CustomerService  {
         String diaChi = scanner.nextLine();
         Customer customer=new Customer(name,ngaySinh,gioiTinh,cmnd,sdt,email,maKhachHang,loaiKhach,diaChi);
         listCustomer.add(customer);
-        readAndWrite.writeFile(listCustomer,"src/data/customer.csv",false);
+        ReadAndWrite.writeFile(listCustomer,"src/data/customer.csv",false);
     }
 
     @Override
@@ -66,7 +65,7 @@ public class CustomerServiceImpl implements CustomerService  {
 //        for (Customer customer:listCustomer) {
 //            System.out.println(customer);
 //        }
-        readAndWrite.readFile(listCustomer,"src/data/customer.csv");
+        ReadAndWrite.readFile(listCustomer,"src/data/customer.csv");
     }
 
     @Override
@@ -96,7 +95,7 @@ public class CustomerServiceImpl implements CustomerService  {
                 String diaChi = scanner.nextLine();
                 Customer customer=new Customer(name,ngaySinh,gioiTinh,cmnd,sdt,email,maKhachHang,loaiKhach,diaChi);
                 listCustomer.set(i,customer);
-                readAndWrite.writeFile(listCustomer,"src/data/customer.csv",false);
+                ReadAndWrite.writeFile(listCustomer,"src/data/customer.csv",false);
                 count++;
             }
         }

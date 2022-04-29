@@ -1,5 +1,6 @@
 package services.impl;
 
+import common.ReadAndWrite;
 import common.Regex;
 import model.coSoVatChat.Facility;
 import model.coSoVatChat.House;
@@ -11,6 +12,7 @@ import model.coSoVatChat.Villa;
 import services.FacilityService;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class FacilityServiceImpl implements FacilityService {
@@ -25,6 +27,7 @@ public class FacilityServiceImpl implements FacilityService {
         facilityList.put(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "hihi"), 5);
         facilityList.put(new Villa("SVVL-0001", "Villa1", 50.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2, 122), 1);
     }
+
 
     @Override
     public void add() {
@@ -53,9 +56,12 @@ public class FacilityServiceImpl implements FacilityService {
 
     @Override
     public void display() {
-        for (Facility key : facilityList.keySet()) {
-            System.out.println(key);
-        }
+//        for (Facility key : facilityList.keySet()) {
+//            System.out.println(key);
+//        }
+        ReadAndWrite.readFile(facilityList,"src/data/villa.csv");
+        ReadAndWrite.readFile(facilityList,"src/data/house.csv");
+        ReadAndWrite.readFile(facilityList,"src/data/room.csv");
     }
 
     @Override
@@ -103,6 +109,7 @@ public class FacilityServiceImpl implements FacilityService {
 //        regex.regexDienTichSuDung(dienTichHoBoi1);
         int dienTichHoBoi = Integer.parseInt(dienTichHoBoi1);
         facilityList.put(new Villa(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang, dienTichHoBoi), 1);
+        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",false);
     }
 
     @Override
@@ -136,6 +143,7 @@ public class FacilityServiceImpl implements FacilityService {
 //        regex.regexSoTang(soTang1);
         int soTang = Integer.parseInt(soTang1);
         facilityList.put(new House(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang), 0);
+        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",false);
     }
 
     @Override
@@ -164,6 +172,7 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.print("Nhập dịch vụ miễn phí: ");
         String dichVuMienPhi = scanner.nextLine();
         facilityList.put(new Room(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, dichVuMienPhi), 0);
+        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",false);
     }
 
     @Override
