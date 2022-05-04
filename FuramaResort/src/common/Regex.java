@@ -8,7 +8,7 @@ public class Regex {
     /*public static*/ final String REGEXMADICHVUHOUSE = "^(SVHO-)\\d{4}$";
     /*public static*/ final String REGEXMADICHVUROOM = "^(SVRO-)\\d{4}$";
     /*public static*/ final String REGEXTEN = "^[A-Z][a-z\\d]*$";
-    /*public static*/ final String REGEXDIENTICHSUDUNG = "^[1-9]\\d{2,}$|^[3-9]\\d*$";
+    /*public static*/ final String REGEXDIENTICHSUDUNG = "^[1-9](,)?\\d{2,}$|^[3-9](,)?\\d*$";
     /*public static*/ final String REGEXCHIPHITHUE = "^\\d+,?\\d*$";
     /*public static*/ final String REGEXSOLUONGNGUOI = "^(1)\\d$|^[1-9]?$";
     /*public static*/ final String REGEXSOTANG = "^\\d*$";

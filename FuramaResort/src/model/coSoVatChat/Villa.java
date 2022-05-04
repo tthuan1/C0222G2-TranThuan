@@ -1,6 +1,6 @@
 package model.coSoVatChat;
 
-public class Villa extends House{
+public class Villa extends House {
     private Integer dienTichHoBoi;
 
     public Villa() {
@@ -31,14 +31,14 @@ public class Villa extends House{
     @Override
     public String toString() {
         return "Villa " +
-                ", mã dịch vụ: " + getMaDichVu()+
+                ", mã dịch vụ: " + getMaDichVu() +
                 ", tên dịch vụ: " + getTenDichVu() +
                 ", diện tích sử dụng: " + getDienTichSuDung() +
                 ", chi phí thuê: " + getChiPhiThue() +
                 ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
-                ", kiểu thuê: " + getKieuThue()+
+                ", kiểu thuê: " + getKieuThue() +
                 ", tiêu chuẩn phòng: " + getTieuChuanPhong() +
-                ", số tầng: " + getSoTang()+
-                ", diện tích hồ bơi: " + dienTichHoBoi ;
+                ", số tầng: " + getSoTang() +
+                ", diện tích hồ bơi: " + dienTichHoBoi;
     }
 }

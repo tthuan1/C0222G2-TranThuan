@@ -17,15 +17,25 @@ import java.util.Scanner;
 
 public class FacilityServiceImpl implements FacilityService {
     Regex regex = new Regex();
-
     static Scanner scanner = new Scanner(System.in);
     static LinkedHashMap<Facility, Integer> facilityList = new LinkedHashMap<>();
 
-    //   tenDichVu, dienTichSuDung, chiPhiThue soLuongNguoiToiDa, kieuThue,  tieuChuanPhong, soTang
     static {
-        facilityList.put(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2), 5);
-        facilityList.put(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "hihi"), 5);
-        facilityList.put(new Villa("SVVL-0001", "Villa1", 50.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2, 122), 1);
+//        facilityList.put(new House("Mã dịch vụ", "Tên dịc vụ","Diện tích sử dụng","Chi phí thuê","Số lượng người tối đa", "Kiểu thuê", "Tiêu chuẩn phòng","Số tầng"));
+//        facilityList.put(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2), 5);
+//        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",true);
+//        facilityList.remove(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2));
+//
+
+//        facilityList.put(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "hihi"), 5);
+//        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",true);
+//        facilityList.remove(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "hihi"));
+
+//
+//        facilityList.put(new Villa("SVVL-0001", "Villa1", 50.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2, 122), 1);
+//        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",true);
+//        facilityList.remove(new Villa("SVVL-0001", "Villa1", 50.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2, 122));
+
     }
 
 
@@ -60,7 +70,9 @@ public class FacilityServiceImpl implements FacilityService {
 //            System.out.println(key);
 //        }
         ReadAndWrite.readFile(facilityList,"src/data/villa.csv");
+        System.out.println("------------------------------------------------");
         ReadAndWrite.readFile(facilityList,"src/data/house.csv");
+        System.out.println("------------------------------------------------");
         ReadAndWrite.readFile(facilityList,"src/data/room.csv");
     }
 
@@ -108,8 +120,10 @@ public class FacilityServiceImpl implements FacilityService {
         String dienTichHoBoi1 = scanner.nextLine();
 //        regex.regexDienTichSuDung(dienTichHoBoi1);
         int dienTichHoBoi = Integer.parseInt(dienTichHoBoi1);
-        facilityList.put(new Villa(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang, dienTichHoBoi), 1);
-        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",false);
+        Villa villa=new Villa(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang, dienTichHoBoi);
+        facilityList.put(villa,0);
+        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",true);
+        facilityList.remove(villa);
     }
 
     @Override
@@ -142,8 +156,10 @@ public class FacilityServiceImpl implements FacilityService {
         String soTang1 = scanner.nextLine();
 //        regex.regexSoTang(soTang1);
         int soTang = Integer.parseInt(soTang1);
-        facilityList.put(new House(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang), 0);
-        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",false);
+        House house=new House(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang);
+        facilityList.put(house, 0);
+        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",true);
+        facilityList.remove(house);
     }
 
     @Override
@@ -171,8 +187,10 @@ public class FacilityServiceImpl implements FacilityService {
 //        regex.regexTen(kieuThue);
         System.out.print("Nhập dịch vụ miễn phí: ");
         String dichVuMienPhi = scanner.nextLine();
-        facilityList.put(new Room(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, dichVuMienPhi), 0);
-        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",false);
+        Room room=new Room(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, dichVuMienPhi);
+        facilityList.put(room, 0);
+        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",true);
+        facilityList.remove(room);
     }
 
     @Override

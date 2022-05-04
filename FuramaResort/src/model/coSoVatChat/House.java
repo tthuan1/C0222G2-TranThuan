@@ -11,7 +11,6 @@ public class House extends Facility {
         this.tieuChuanPhong = tieuChuanPhong;
         this.soTang = soTang;
     }
-
     public House(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang) {
         super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
@@ -37,7 +36,7 @@ public class House extends Facility {
     @Override
     public String toString() {
         return "House: " +
-                ", mã dịch vụ: " + getMaDichVu() +
+                "  Mã dịch vụ: " + getMaDichVu() +
                 ", tên dịch vụ: " + getTenDichVu() +
                 ", diện tích sử dụng: " + getDienTichSuDung() +
                 ", chi phí thuê: " + getChiPhiThue() +

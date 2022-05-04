@@ -26,7 +26,7 @@ public class Room extends Facility {
     @Override
     public String toString() {
         return "Room: " +
-                ", mã dịch vụ: " + getMaDichVu() +
+                "  Mã dịch vụ: " + getMaDichVu() +
                 ", tên dịch vụ: " + getTenDichVu() +
                 ", diện tích sử dụng: " + getDienTichSuDung() +
                 ", chi phí thuê: " + getChiPhiThue() +

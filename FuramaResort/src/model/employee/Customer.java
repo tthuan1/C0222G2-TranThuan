@@ -1,8 +1,8 @@
 package model.employee;
 
 
-public class Customer extends Person{
-//Mã khách hàng,   Loại khách, Địa chỉ
+public class Customer extends Person {
+    //Mã khách hàng,   Loại khách, Địa chỉ
     private String maKhachHang;
     private String loaiKhach;
     private String diaChi;
@@ -49,7 +49,13 @@ public class Customer extends Person{
 
     @Override
     public String toString() {
-        return "Customer- " +super.toString()+
+        return "Customer: " +
+                "  Tên: " + getName() +
+                ", ngày sinh: " + getNgaySinh() +
+                ", giới tính: " + getGioiTinh() +
+                ", cmnd: " + getCmnd() +
+                ", sdt: " + getSdt() +
+                ", email: " + getEmail() +
                 " mã khách hàng: " + maKhachHang +
                 ", loại khách: " + loaiKhach +
                 ", địa chỉ: " + diaChi;

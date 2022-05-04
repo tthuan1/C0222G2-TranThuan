@@ -66,8 +66,7 @@ public class FuramaController {
                 employeeServiceImpl.update();
                 break;
             case 4:
-                displayMainMenu();
-                break;
+                return;
             default:
                 break;
         }
@@ -91,8 +90,7 @@ public class FuramaController {
                 customerServiceImpl.update();
                 break;
             case 4:
-                displayMainMenu();
-                break;
+                return;
             default:
                 break;
         }

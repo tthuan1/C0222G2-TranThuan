@@ -98,6 +98,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
         if (count == 0) {
             System.out.println("Không tiềm thấy số mã nhân viên " + update + " này !!\n");
+
+//            update();
             FuramaController.employee();
         }
     }
