@@ -1,48 +1,56 @@
 package model.coSoVatChat;
 
 public class House extends Facility {
-    private String tieuChuanPhong;
-    private Integer soTang;
+    private String roomStandard;
+    private Integer numberOfFloors;
 
     public House() {
     }
 
-    public House(String tieuChuanPhong, Integer soTang) {
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.soTang = soTang;
+    public House(String roomStandard, Integer numberOfFloors) {
+        this.roomStandard = roomStandard;
+        this.numberOfFloors = numberOfFloors;
     }
-    public House(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang) {
-        super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.soTang = soTang;
-    }
-
-    public String getTieuChuanPhong() {
-        return tieuChuanPhong;
+    public House(String serviceCode, String serviceName, Double usableArea, Double rentalCosts, Integer numberOfPeople, String rentalType, String roomStandard, Integer numberOfFloors) {
+        super(serviceCode, serviceName, usableArea, rentalCosts, numberOfPeople, rentalType);
+        this.roomStandard = roomStandard;
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public void setTieuChuanPhong(String tieuChuanPhong) {
-        this.tieuChuanPhong = tieuChuanPhong;
+    public String getRoomStandard() {
+        return roomStandard;
     }
 
-    public Integer getSoTang() {
-        return soTang;
+    public void setRoomStandard(String roomStandard) {
+        this.roomStandard = roomStandard;
     }
 
-    public void setSoTang(Integer soTang) {
-        this.soTang = soTang;
+    public Integer getNumberOfFloors() {
+        return numberOfFloors;
+    }
+
+    public void setNumberOfFloors(Integer numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 
     @Override
     public String toString() {
-        return "House: " +
-                "  Mã dịch vụ: " + getMaDichVu() +
-                ", tên dịch vụ: " + getTenDichVu() +
-                ", diện tích sử dụng: " + getDienTichSuDung() +
-                ", chi phí thuê: " + getChiPhiThue() +
-                ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
-                ", kiểu thuê: " + getKieuThue() +
-                ", tiêu chuẩn phòng: " + tieuChuanPhong +
-                ", số tầng: " + soTang;
+//        return "House " +
+//                ", mã dịch vụ: " + getServiceCode() +
+//                ", tên dịch vụ: " + getServiceName() +
+//                ", diện tích sử dụng: " + getUsableArea() +
+//                ", chi phí thuê: " + getRentalCosts() +
+//                ", số lượng người tối đa: " + getNumberOfPeople() +
+//                ", kiểu thuê: " + getRentalType() +
+//                ", tiêu chuẩn phòng: " + roomStandard +
+//                ", số tầng: " + numberOfFloors;
+        return getServiceCode() +
+                "," + getServiceName() +
+                "," + getUsableArea() +
+                "," + getRentalCosts() +
+                "," + getNumberOfPeople() +
+                "," + getRentalType() +
+                "," + roomStandard +
+                "," + numberOfFloors;
     }
 }

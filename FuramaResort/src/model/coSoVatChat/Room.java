@@ -1,37 +1,44 @@
 package model.coSoVatChat;
 
 public class Room extends Facility {
-    private String dichVuMienPhi;
+    private String freeService;
 
     public Room() {
     }
 
-    public Room(String dichVuMienPhi) {
-        this.dichVuMienPhi = dichVuMienPhi;
+    public Room(String freeService) {
+        this.freeService = freeService;
     }
 
-    public Room(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String dichVuMienPhi) {
-        super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
-        this.dichVuMienPhi = dichVuMienPhi;
+    public Room(String serviceCode, String serviceName, Double usableArea, Double rentalCosts, Integer numberOfPeople, String rentalType, String freeService) {
+        super(serviceCode, serviceName, usableArea, rentalCosts, numberOfPeople, rentalType);
+        this.freeService = freeService;
     }
 
-    public String getDichVuMienPhi() {
-        return dichVuMienPhi;
+    public String getFreeService() {
+        return freeService;
     }
 
-    public void setDichVuMienPhi(String dichVuMienPhi) {
-        this.dichVuMienPhi = dichVuMienPhi;
+    public void setFreeService(String freeService) {
+        this.freeService = freeService;
     }
 
     @Override
     public String toString() {
-        return "Room: " +
-                "  Mã dịch vụ: " + getMaDichVu() +
-                ", tên dịch vụ: " + getTenDichVu() +
-                ", diện tích sử dụng: " + getDienTichSuDung() +
-                ", chi phí thuê: " + getChiPhiThue() +
-                ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
-                ", kiểu thuê: " + getKieuThue() +
-                ", dịch vụ miễn phí đi kèm: '" + dichVuMienPhi;
+//        return "Room " +
+//                ", mã dịch vụ: " + getServiceCode() +
+//                ", tên dịch vụ: " + getServiceName() +
+//                ", diện tích sử dụng: " + getUsableArea() +
+//                ", chi phí thuê: " + getRentalCosts() +
+//                ", số lượng người tối đa: " + getNumberOfPeople() +
+//                ", kiểu thuê: " + getRentalType() +
+//                ", dịch vụ miễn phí đi kèm: '" + freeService;
+        return getServiceCode() +
+                "," + getServiceName() +
+                "," + getUsableArea() +
+                "," + getRentalCosts() +
+                "," + getNumberOfPeople() +
+                "," + getRentalType() +
+                "," + freeService;
     }
 }

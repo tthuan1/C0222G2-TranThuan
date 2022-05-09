@@ -19,7 +19,7 @@ public class BookingServiceImpl implements BookingService {
     }
 
     @Override
-    public void update() {
+    public void edit() {
 
     }
 

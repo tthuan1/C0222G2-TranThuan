@@ -1,5 +1,6 @@
-Customer:   Tên: Huyền, ngày sinh: 18-03-1999, giới tính: nữ, cmnd: 3612789361, sdt: 0905001001, email: ntbhuyen@gmail.com mã khách hàng: 001, loại khách: Diamond, địa chỉ: 06 Nam thành- đà nẵng
-Customer:   Tên: Thuận, ngày sinh: 18-09-1999, giới tính: Nam, cmnd: 084446, sdt: 0944192105, email: tthuan.@gmail.com mã khách hàng: 002, loại khách: Platinium, địa chỉ: Đà Nẵng
-Customer:   Tên: Vũ, ngày sinh: 19-03-1999, giới tính: nam, cmnd: 34678123, sdt: 0905123211, email: nhvu@gmail.com mã khách hàng: 003, loại khách: Gold, địa chỉ: 06 Nam thành- đà nẵng
-Customer:   Tên: Lộc, ngày sinh: 16-4-1999, giới tính: Nam, cmnd: 7312893, sdt: 2893297104, email: pdloc.@gmail.com mã khách hàng: 004, loại khách: Silver, địa chỉ: Đà Nẵng
-Customer:   Tên: Tân, ngày sinh: 05-07-1999, giới tính: Nam, cmnd: 53647289, sdt: 6381279412, email: pttan.@gmail.com mã khách hàng: 005, loại khách: Member, địa chỉ: Đà Nẵng
+001,Huyền,18-03-1999,nữ,3612789361,0905001001,ntbhuyen@gmail.com,Diamond,06 Nam thành- đà nẵng
+002,Thuận,18-09-1999,Nam,084446,0944192105,tthuan.@gmail.com,Platinium,Đà Nẵng
+003,Vũ,19-03-1999,nam,34678123,0905123211,nhvu@gmail.com,Gold,06 Nam thành- đà nẵng
+004,Lộc,16-4-1999,Nam,7312893,2893297104,pdloc.@gmail.com,Silver,Đà Nẵng
+005,Tân,05-07-1999,Nam,53647289,6381279412,pttan.@gmail.com,Member,Đà Nẵng
+1,1,1,1,1,1,1,1,1

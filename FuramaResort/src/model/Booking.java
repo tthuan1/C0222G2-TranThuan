@@ -77,7 +77,7 @@ public class Booking  {
     @Override
     public String toString() {
         return "Booking- " +
-                "mã booking: " + maBooking +
+                ", mã booking: " + maBooking +
                 ", ngày bắt đầu: " + ngayBatDau +
                 ", ngày kết thúc: " + ngayKetThuc +
                 ", mã khách hàng: " + maKhachHang +

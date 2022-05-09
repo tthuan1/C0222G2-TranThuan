@@ -4,22 +4,22 @@ package model.employee;
 public abstract class Person {
     //   Họ tên, Ngày sinh, Giới tính, Số CMND, Số Điện Thoại, Email,
     private String name;
-    private String ngaySinh;
-    private String gioiTinh;
-    private String cmnd;
-    private String sdt;
+    private String dateOfBirth;
+    private String gender;
+    private String identityCard;
+    private String phoneNumber;
     private String email;
 
     public Person() {
     }
 
     public Person(String name, String
- ngaySinh, String gioiTinh, String cmnd, String sdt, String email) {
+            dateOfBirth, String gender, String identityCard, String phoneNumber, String email) {
         this.name = name;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.cmnd = cmnd;
-        this.sdt = sdt;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.identityCard = identityCard;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
@@ -32,37 +32,37 @@ public abstract class Person {
     }
 
     public String
- getNgaySinh() {
-        return ngaySinh;
+    getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setNgaySinh(String
- ngaySinh) {
-        this.ngaySinh = ngaySinh;
+    public void setDateOfBirth(String
+                                       dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getGioiTinh() {
-        return gioiTinh;
+    public String getGender() {
+        return gender;
     }
 
-    public void setGioiTinh(String gioiTinh) {
-        this.gioiTinh = gioiTinh;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public String getCmnd() {
-        return cmnd;
+    public String getIdentityCard() {
+        return identityCard;
     }
 
-    public void setCmnd(String cmnd) {
-        this.cmnd = cmnd;
+    public void setIdentityCard(String identityCard) {
+        this.identityCard = identityCard;
     }
 
-    public String getSdt() {
-        return sdt;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setSdt(String sdt) {
-        this.sdt = sdt;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
@@ -75,12 +75,12 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person- " +
-                "  tên: " + name +
-                ", ngày sinh: " + ngaySinh +
-                ", giới tính: " + gioiTinh +
-                ", cmnd: " + cmnd +
-                ", sdt: " + sdt +
+        return "Person " +
+                ", tên: " + name +
+                ", ngày sinh: " + dateOfBirth +
+                ", giới tính: " + gender +
+                ", cmnd: " + identityCard +
+                ", sdt: " + phoneNumber +
                 ", email: " + email;
     }
 }

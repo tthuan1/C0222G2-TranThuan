@@ -1,81 +1,84 @@
 package model.coSoVatChat;
 
 public abstract class Facility {
-    private String maDichVu;
-    private String tenDichVu;
-    private Double dienTichSuDung;
-    private Double chiPhiThue;
-    private Integer soLuongNguoiToiDa;
-    private String KieuThue;
+    private String serviceCode;
+    private String serviceName;
+    private Double usableArea;
+    private Double rentalCosts;
+    private Integer numberOfPeople;
+    private String rentalType;
 
     public Facility() {
     }
 
-    public Facility(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
-        this.maDichVu = maDichVu;
-        this.tenDichVu = tenDichVu;
-        this.dienTichSuDung = dienTichSuDung;
-        this.chiPhiThue = chiPhiThue;
-        this.soLuongNguoiToiDa = soLuongNguoiToiDa;
-        KieuThue = kieuThue;
+    public Facility(String serviceCode, String serviceName, Double usableArea, Double rentalCosts, Integer numberOfPeople, String rentalType) {
+        this.serviceCode = serviceCode;
+        this.serviceName = serviceName;
+        this.usableArea = usableArea;
+        this.rentalCosts = rentalCosts;
+        this.numberOfPeople = numberOfPeople;
+        this.rentalType = rentalType;
     }
 
-    public String getTenDichVu() {
-        return tenDichVu;
+    public String getServiceName() {
+        return serviceName;
     }
 
-    public void setTenDichVu(String tenDichVu) {
-        this.tenDichVu = tenDichVu;
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
-    public Double getDienTichSuDung() {
-        return dienTichSuDung;
+    public Double getUsableArea() {
+        return usableArea;
     }
 
-    public void setDienTichSuDung(Double dienTichSuDung) {
-        this.dienTichSuDung = dienTichSuDung;
+    public void setUsableArea(Double usableArea) {
+        this.usableArea = usableArea;
     }
 
-    public Double getChiPhiThue() {
-        return chiPhiThue;
+    public Double getRentalCosts() {
+        return rentalCosts;
     }
 
-    public void setChiPhiThue(Double chiPhiThue) {
-        this.chiPhiThue = chiPhiThue;
+    public void setRentalCosts(Double rentalCosts) {
+        this.rentalCosts = rentalCosts;
     }
 
-    public Integer getSoLuongNguoiToiDa() {
-        return soLuongNguoiToiDa;
+    public Integer getNumberOfPeople() {
+        return numberOfPeople;
     }
 
-    public void setSoLuongNguoiToiDa(Integer soLuongNguoiToiDa) {
-        this.soLuongNguoiToiDa = soLuongNguoiToiDa;
+    public void setNumberOfPeople(Integer numberOfPeople) {
+        this.numberOfPeople = numberOfPeople;
     }
 
-    public String getKieuThue() {
-        return KieuThue;
+    public String getRentalType() {
+        return rentalType;
     }
 
-    public void setKieuThue(String kieuThue) {
-        KieuThue = kieuThue;
+    public void setRentalType(String rentalType) {
+        this.rentalType = rentalType;
     }
 
-    public String getMaDichVu() {
-        return maDichVu;
+    public String getServiceCode() {
+        return serviceCode;
     }
 
-    public void setMaDichVu(String maDichVu) {
-        this.maDichVu = maDichVu;
+    public void setServiceCode(String serviceCode) {
+        this.serviceCode = serviceCode;
     }
 
     @Override
     public String toString() {
-        return "Facility: " +
-                ", mã dịch vụ: " + maDichVu +
-                ", tên dịch vụ: " + tenDichVu +
-                ", diện tích sử dụng: " + dienTichSuDung +
-                ", chi phí thuê: " + chiPhiThue +
-                ", số lượng người tối đa: " + soLuongNguoiToiDa +
-                ", kiểu thuê: " + KieuThue;
+        return "Facility " +
+                ", mã dịch vụ: " + serviceCode +
+                ", tên dịch vụ: " + serviceName +
+                ", diện tích sử dụng: " + usableArea +
+                ", chi phí thuê: " + rentalCosts +
+                ", số lượng người tối đa: " + numberOfPeople +
+                ", kiểu thuê: " + rentalType;
     }
+//    public String getIn4() {
+//        return this.serviceCode + "," +
+//    }
 }

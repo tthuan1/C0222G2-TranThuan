@@ -13,19 +13,23 @@ public class EmployeeServiceImpl implements EmployeeService {
     static ArrayList<Employee> listEmployee = new ArrayList<>();
 
     static {
-        listEmployee.add(new Employee("thuận", "18-09-1999",
-                "nam", "123456789", "0944191105", "tranthuan@gmail.com",
-                "001", "Đại học", "Giám đốc", 10000000));
-        listEmployee.add(new Employee("hoàn", "01-04-1996",
-                "nam", "987654320", "4623178946", "tvhoan@gmail.com",
-                "002", "Đại học", "Phó giám đốc", 8000000));
-        listEmployee.add(new Employee("phúc", "24-02-1996",
-                "nam", "46321786487", "09053127689", "phucnhatban@gmail.com",
-                "003", "Trung cấp", "giám sát", 7000000));
-        listEmployee.add(new Employee("phương", "16-07-1999",
-                "nam", "7831290739", "0981786267", "tdphuong@gmail.com",
-                "001", "Đại học", "Giám đốc", 10000000));
-        ReadAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
+//        listEmployee.add(new Employee("001","thuận", "18-09-1999",
+//                "nam", "123456789", "0944191105", "tranthuan@gmail.com",
+//                 "Đại học", "Giám đốc", 10000000));
+//        listEmployee.add(new Employee("002","hoàn", "01-04-1996",
+//                "nam", "987654320", "4623178946", "tvhoan@gmail.com",
+//                 "Đại học", "Phó giám đốc", 8000000));
+//        listEmployee.add(new Employee("003","phúc", "24-02-1996",
+//                "nam", "46321786487", "09053127689", "phucnhatban@gmail.com",
+//                 "Trung cấp", "giám sát", 7000000));
+//        listEmployee.add(new Employee("004","phương", "16-07-1999",
+//                "nam", "7831290739", "0981786267", "tdphuong@gmail.com",
+//                 "Đại học", "Giám đốc", 10000000));
+//        ReadAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
+//        ReadAndWrite.readFileEmployee(listEmployee);
+        for (Employee employee : listEmployee) {
+            System.out.println(employee);
+        }
     }
 
     @Override
@@ -50,26 +54,26 @@ public class EmployeeServiceImpl implements EmployeeService {
         String viTri = scanner.nextLine();
         System.out.print("Nhập số lương: ");
         int luong = Integer.parseInt(scanner.nextLine());
-        Employee employee = new Employee(name, date, gioiTinh, cmnd, sdt, email, maNhanVien, trinhDo, viTri, luong);
+        Employee employee = new Employee(maNhanVien, name,date,gioiTinh,cmnd,sdt,email,trinhDo,viTri,luong);
         listEmployee.add(employee);
         ReadAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
     }
 
     @Override
     public void display() {
-//        for (Employee employee : listEmployee) {
-//            System.out.println(employee);
-//        }
-        ReadAndWrite.readFile(listEmployee,"src/data/employee.csv");
+        ReadAndWrite.readFileEmployee(listEmployee);
+        for (Employee employee : listEmployee) {
+            System.out.println(employee);
+        }
     }
 
     @Override
-    public void update() {
+    public void edit() {
         System.out.print("Nhập mã nhân viên cần sửa: ");
         String update = scanner.nextLine();
         int count = 0;
         for (int i = 0; i < listEmployee.size(); i++) {
-            if (update.equals(listEmployee.get(i).getMaNhanVien())) {
+            if (update.equals(listEmployee.get(i).getEmployeeCode())) {
                 count++;
                 System.out.print("Nhập tên nhân viên: ");
                 String name = scanner.nextLine();
@@ -91,15 +95,13 @@ public class EmployeeServiceImpl implements EmployeeService {
                 String viTri = scanner.nextLine();
                 System.out.print("Nhập số lương: ");
                 int luong = Integer.parseInt(scanner.nextLine());
-                Employee employee = new Employee(name, date, gioiTinh, cmnd, sdt, email, maNhanVien, trinhDo, viTri, luong);
+                Employee employee = new Employee(maNhanVien,name,date, gioiTinh, cmnd, sdt, email,  trinhDo, viTri, luong);
                 listEmployee.set(i, employee);
                 ReadAndWrite.writeFile(listEmployee,"src/data/employee.csv",false);
             }
         }
         if (count == 0) {
             System.out.println("Không tiềm thấy số mã nhân viên " + update + " này !!\n");
-
-//            update();
             FuramaController.employee();
         }
     }

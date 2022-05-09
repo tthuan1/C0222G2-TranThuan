@@ -3,61 +3,81 @@ package model.employee;
 
 public class Customer extends Person {
     //Mã khách hàng,   Loại khách, Địa chỉ
-    private String maKhachHang;
-    private String loaiKhach;
-    private String diaChi;
+    private String customerCode;
+    private String customerType;
+    private String address;
 
     public Customer() {
     }
 
-    public Customer(String maKhachHang, String loaiKhach, String diaChi) {
-        this.maKhachHang = maKhachHang;
-        this.loaiKhach = loaiKhach;
-        this.diaChi = diaChi;
+    public Customer(String customerCode, String customerType, String address) {
+        this.customerCode = customerCode;
+        this.customerType = customerType;
+        this.address = address;
     }
 
-    public Customer(String name, String ngaySinh, String gioiTinh, String cmnd, String sdt, String email, String maKhachHang, String loaiKhach, String diaChi) {
-        super(name, ngaySinh, gioiTinh, cmnd, sdt, email);
-        this.maKhachHang = maKhachHang;
-        this.loaiKhach = loaiKhach;
-        this.diaChi = diaChi;
+    public Customer(String customerCode,String name,String dateOfBirth,String gender,String identityCard,String phoneNumber,String email,String customerType,String address) {
+        super(name, dateOfBirth, gender, identityCard, phoneNumber, email);
+        this.customerCode = customerCode;
+        this.customerType = customerType;
+        this.address = address;
     }
 
-    public String getMaKhachHang() {
-        return maKhachHang;
+    public String getCustomerCode() {
+        return customerCode;
     }
 
-    public void setMaKhachHang(String maKhachHang) {
-        this.maKhachHang = maKhachHang;
+    public void setCustomerCode(String customerCode) {
+        this.customerCode = customerCode;
     }
 
-    public String getLoaiKhach() {
-        return loaiKhach;
+    public String getCustomerType() {
+        return customerType;
     }
 
-    public void setLoaiKhach(String loaiKhach) {
-        this.loaiKhach = loaiKhach;
+    public void setCustomerType(String customerType) {
+        this.customerType = customerType;
     }
 
-    public String getDiaChi() {
-        return diaChi;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
     public String toString() {
-        return "Customer: " +
-                "  Tên: " + getName() +
-                ", ngày sinh: " + getNgaySinh() +
-                ", giới tính: " + getGioiTinh() +
-                ", cmnd: " + getCmnd() +
-                ", sdt: " + getSdt() +
-                ", email: " + getEmail() +
-                " mã khách hàng: " + maKhachHang +
-                ", loại khách: " + loaiKhach +
-                ", địa chỉ: " + diaChi;
+        return    customerCode +
+                "," + getName() +
+                "," + getDateOfBirth() +
+                "," + getGender() +
+                "," + getIdentityCard() +
+                "," + getPhoneNumber() +
+                "," + getEmail() +
+                "," + customerType +
+                "," + address;
+//        return "Customer" +
+//                ", tên: " + getName() +
+//                ", ngày sinh: " + getDateOfBirth() +
+//                ", giới tính: " + getGender() +
+//                ", cmnd: " + getIdentityCard() +
+//                ", sdt: " + getPhoneNumber() +
+//                ", email: " + getEmail() +
+//                ", mã khách hàng: " + customerCode +
+//                ", loại khách: " + customerType +
+//                ", địa chỉ: " + address;
+    }
+    public String getInformation(){
+        return getName() +
+                "," + getDateOfBirth() +
+                "," + getGender() +
+                "," + getIdentityCard() +
+                "," + getPhoneNumber() +
+                "," + getEmail() +
+                "," + customerCode +
+                "," + customerType +
+                "," + address;
     }
 }

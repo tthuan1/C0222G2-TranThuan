@@ -15,7 +15,7 @@ public class ServiceImpl implements Service {
     }
 
     @Override
-    public void update() {
+    public void edit() {
 
     }
 

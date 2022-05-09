@@ -1,7 +1,5 @@
 package controllers;
 
-import model.coSoVatChat.Facility;
-import services.CustomerService;
 import services.impl.CustomerServiceImpl;
 import services.impl.EmployeeServiceImpl;
 import services.impl.FacilityServiceImpl;
@@ -63,7 +61,7 @@ public class FuramaController {
                 employeeServiceImpl.add();
                 break;
             case 3:
-                employeeServiceImpl.update();
+                employeeServiceImpl.edit();
                 break;
             case 4:
                 return;
@@ -87,7 +85,7 @@ public class FuramaController {
                 customerServiceImpl.add();
                 break;
             case 3:
-                customerServiceImpl.update();
+                customerServiceImpl.edit();
                 break;
             case 4:
                 return;

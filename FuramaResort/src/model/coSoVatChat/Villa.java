@@ -1,44 +1,53 @@
 package model.coSoVatChat;
 
 public class Villa extends House {
-    private Integer dienTichHoBoi;
+    private Integer poolAcreage;
 
     public Villa() {
     }
 
-    public Villa(Integer dienTichHoBoi) {
-        this.dienTichHoBoi = dienTichHoBoi;
+    public Villa(Integer poolAcreage) {
+        this.poolAcreage = poolAcreage;
     }
 
-    public Villa(String tieuChuanPhong, Integer soTang, Integer dienTichHoBoi) {
+    public Villa(String tieuChuanPhong, Integer soTang, Integer poolAcreage) {
         super(tieuChuanPhong, soTang);
-        this.dienTichHoBoi = dienTichHoBoi;
+        this.poolAcreage = poolAcreage;
     }
 
-    public Villa(String maDichVu, String tenDichVu, Double dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang, Integer dienTichHoBoi) {
-        super(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang);
-        this.dienTichHoBoi = dienTichHoBoi;
+    public Villa(String serviceCode, String serviceName, Double usableArea, Double rentalCosts, Integer numberOfPeople, String rentalType, String roomStandard, Integer numberOfFloors, Integer poolAcreage) {
+        super(serviceCode, serviceName, usableArea, rentalCosts, numberOfPeople, rentalType, roomStandard, numberOfFloors);
+        this.poolAcreage = poolAcreage;
     }
 
-    public Integer getDienTichHoBoi() {
-        return dienTichHoBoi;
+    public Integer getPoolAcreage() {
+        return poolAcreage;
     }
 
-    public void setDienTichHoBoi(Integer dienTichHoBoi) {
-        this.dienTichHoBoi = dienTichHoBoi;
+    public void setPoolAcreage(Integer poolAcreage) {
+        this.poolAcreage = poolAcreage;
     }
 
     @Override
     public String toString() {
-        return "Villa " +
-                ", mã dịch vụ: " + getMaDichVu() +
-                ", tên dịch vụ: " + getTenDichVu() +
-                ", diện tích sử dụng: " + getDienTichSuDung() +
-                ", chi phí thuê: " + getChiPhiThue() +
-                ", số lượng người tối đa: " + getSoLuongNguoiToiDa() +
-                ", kiểu thuê: " + getKieuThue() +
-                ", tiêu chuẩn phòng: " + getTieuChuanPhong() +
-                ", số tầng: " + getSoTang() +
-                ", diện tích hồ bơi: " + dienTichHoBoi;
+//        return "Villa " +
+//                ", mã dịch vụ: " + getServiceCode() +
+//                ", tên dịch vụ: " + getServiceName() +
+//                ", diện tích sử dụng: " + getUsableArea() +
+//                ", chi phí thuê: " + getRentalCosts() +
+//                ", số lượng người tối đa: " + getNumberOfPeople() +
+//                ", kiểu thuê: " + getRentalType() +
+//                ", tiêu chuẩn phòng: " + getRoomStandard() +
+//                ", số tầng: " + getNumberOfFloors() +
+//                ", diện tích hồ bơi: " + poolAcreage;
+        return getServiceCode() +
+                "," + getServiceName() +
+                "," + getUsableArea() +
+                "," + getRentalCosts() +
+                "," + getNumberOfPeople() +
+                "," + getRentalType() +
+                "," + getRoomStandard() +
+                "," + getNumberOfFloors() +
+                "," + poolAcreage;
     }
 }

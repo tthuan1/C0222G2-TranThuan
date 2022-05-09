@@ -11,6 +11,9 @@ import model.coSoVatChat.Villa;
 //import model.facility.Room;
 import services.FacilityService;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Scanner;
@@ -21,22 +24,23 @@ public class FacilityServiceImpl implements FacilityService {
     static LinkedHashMap<Facility, Integer> facilityList = new LinkedHashMap<>();
 
     static {
-//        facilityList.put(new House("Mã dịch vụ", "Tên dịc vụ","Diện tích sử dụng","Chi phí thuê","Số lượng người tối đa", "Kiểu thuê", "Tiêu chuẩn phòng","Số tầng"));
 //        facilityList.put(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2), 5);
-//        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",true);
+//        facilityList.put(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 3), 4);
+//        facilityList.put(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 4), 3);
+//        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",false);
 //        facilityList.remove(new House("SVHO-0001", "House1", 40.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2));
 //
-
-//        facilityList.put(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "hihi"), 5);
-//        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",true);
-//        facilityList.remove(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "hihi"));
-
+//        facilityList.put(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "Không có"), 5);
+//        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",false);
+//        facilityList.remove(new Room("SVRO-0001", "Room1", 30.0, 1000.90, 12231, "theo thang", "Không có"));
+//
 //
 //        facilityList.put(new Villa("SVVL-0001", "Villa1", 50.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2, 122), 1);
-//        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",true);
+//        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",false);
 //        facilityList.remove(new Villa("SVVL-0001", "Villa1", 50.0, 1000000.00, 5, "THEO NGÀY", "VIP", 2, 122));
-
+        ReadAndWrite.readFileHouse(facilityList);
     }
+
 
 
     @Override
@@ -69,15 +73,13 @@ public class FacilityServiceImpl implements FacilityService {
 //        for (Facility key : facilityList.keySet()) {
 //            System.out.println(key);
 //        }
-        ReadAndWrite.readFile(facilityList,"src/data/villa.csv");
-        System.out.println("------------------------------------------------");
-        ReadAndWrite.readFile(facilityList,"src/data/house.csv");
-        System.out.println("------------------------------------------------");
-        ReadAndWrite.readFile(facilityList,"src/data/room.csv");
+        for (int i = 0; i < facilityList.size(); i++) {
+            System.out.println(facilityList.keySet());
+        }
     }
 
     @Override
-    public void update() {
+    public void edit() {
 
     }
 
@@ -122,8 +124,7 @@ public class FacilityServiceImpl implements FacilityService {
         int dienTichHoBoi = Integer.parseInt(dienTichHoBoi1);
         Villa villa=new Villa(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang, dienTichHoBoi);
         facilityList.put(villa,0);
-        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",true);
-        facilityList.remove(villa);
+        ReadAndWrite.writeFile( facilityList,"src/data/villa.csv",false);
     }
 
     @Override
@@ -158,8 +159,7 @@ public class FacilityServiceImpl implements FacilityService {
         int soTang = Integer.parseInt(soTang1);
         House house=new House(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, tieuChuanPhong, soTang);
         facilityList.put(house, 0);
-        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",true);
-        facilityList.remove(house);
+        ReadAndWrite.writeFile( facilityList,"src/data/house.csv",false);
     }
 
     @Override
@@ -189,8 +189,7 @@ public class FacilityServiceImpl implements FacilityService {
         String dichVuMienPhi = scanner.nextLine();
         Room room=new Room(maDichVu, tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue, dichVuMienPhi);
         facilityList.put(room, 0);
-        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",true);
-        facilityList.remove(room);
+        ReadAndWrite.writeFile( facilityList,"src/data/room.csv",false);
     }
 
     @Override
